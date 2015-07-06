@@ -1,0 +1,227 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Tue 24 Mar 2015 10:46:10 AM CET
+
+BeginCmp
+TimeStamp = /55117638;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117634;
+Reference = C2;
+ValeurCmp = 10u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117633;
+Reference = C3;
+ValeurCmp = 1u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117632;
+Reference = C4;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511762F;
+Reference = C5;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511762B;
+Reference = C6;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511764B;
+Reference = C7;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511764D;
+Reference = C8;
+ValeurCmp = 30p;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511764C;
+Reference = C9;
+ValeurCmp = 30p;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117646;
+Reference = C10;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117645;
+Reference = C11;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117644;
+Reference = C12;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117643;
+Reference = C13;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117642;
+Reference = C14;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117641;
+Reference = C15;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511768B;
+Reference = LED1;
+ValeurCmp = LED;
+IdModule  = mysmd:SM0603S_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117692;
+Reference = P1;
+ValeurCmp = CONN_01X10;
+IdModule  = mysmd:CASTELLATED_2MM_10;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117694;
+Reference = P2;
+ValeurCmp = CONN_01X07;
+IdModule  = mysmd:CASTELLATED_2MM_7;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117693;
+Reference = P3;
+ValeurCmp = CONN_01X10;
+IdModule  = mysmd:CASTELLATED_2MM_10;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117695;
+Reference = P4;
+ValeurCmp = CONN_01X07;
+IdModule  = mysmd:CASTELLATED_2MM_7;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117636;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511768A;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511763E;
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511763D;
+Reference = R4;
+ValeurCmp = 1k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511763C;
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511763B;
+Reference = R6;
+ValeurCmp = 1k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117662;
+Reference = R7;
+ValeurCmp = 56k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511762D;
+Reference = RS1;
+ValeurCmp = RESONATOR_3P;
+IdModule  = mysmd:EPSON_F-135;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511763A;
+Reference = U1;
+ValeurCmp = ATMEGA328P;
+IdModule  = mysmd:avr-MLF32;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117663;
+Reference = U2;
+ValeurCmp = CC1101;
+IdModule  = mysmd:QLP20;
+EndCmp
+
+BeginCmp
+TimeStamp = /55117690;
+Reference = U3;
+ValeurCmp = BALUN+FILTER;
+IdModule  = mysmd:JTI_Balun;
+EndCmp
+
+BeginCmp
+TimeStamp = /5511764F;
+Reference = X1;
+ValeurCmp = 26MHz;
+IdModule  = mysmd:FCX-162;
+EndCmp
+
+EndListe

@@ -1,0 +1,262 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Thu 14 May 2015 06:50:17 PM CEST
+
+BeginCmp
+TimeStamp = /55099D0E;
+Reference = ANT1;
+ValeurCmp = ANTENNA;
+IdModule  = myconnectors:SMA_RightAngle_Tyco;
+EndCmp
+
+BeginCmp
+TimeStamp = /551AB75C;
+Reference = ANT2;
+ValeurCmp = ANTENNA;
+IdModule  = myconnectors:U.FL_CONN;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085157;
+Reference = C1;
+ValeurCmp = 10u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5508513D;
+Reference = C2;
+ValeurCmp = 1u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5508513F;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085156;
+Reference = C4;
+ValeurCmp = 10u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085151;
+Reference = C5;
+ValeurCmp = 1u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085150;
+Reference = C6;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085179;
+Reference = C7;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085143;
+Reference = C8;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /551974CF;
+Reference = C9;
+ValeurCmp = 10u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5519C1DF;
+Reference = C10;
+ValeurCmp = 3.9p;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5519C496;
+Reference = C11;
+ValeurCmp = 0.3p;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55534A9E;
+Reference = C12;
+ValeurCmp = 4.7u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55535400;
+Reference = C13;
+ValeurCmp = 220n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5553578F;
+Reference = C14;
+ValeurCmp = 10u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55535725;
+Reference = C15;
+ValeurCmp = 100n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55474E1B;
+Reference = D1;
+ValeurCmp = SD0603S040S0R2;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085158;
+Reference = L1;
+ValeurCmp = 4.7u;
+IdModule  = libcms:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5519C62B;
+Reference = L2;
+ValeurCmp = 18n;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /551A7912;
+Reference = L3;
+ValeurCmp = ANTENNA;
+IdModule  = 0868AT43A0020;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085132;
+Reference = P1;
+ValeurCmp = CONN_01X14;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x12;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085133;
+Reference = P2;
+ValeurCmp = CONN_01X14;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x12;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085155;
+Reference = P3;
+ValeurCmp = CONN_8;
+IdModule  = myconnectors:PIN_ARRAY_8X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085137;
+Reference = PS1;
+ValeurCmp = PANSTAMP_NRG2;
+IdModule  = mysmd:PANSTAMP_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /551A7A6E;
+Reference = R1;
+ValeurCmp = 0;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085141;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085142;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5508513B;
+Reference = R6;
+ValeurCmp = 10k;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5550847B;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = mysmd:switch-tact-noah;
+EndCmp
+
+BeginCmp
+TimeStamp = /5508513A;
+Reference = TH1;
+ValeurCmp = THERMISTOR;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /5508514C;
+Reference = U1;
+ValeurCmp = BMP180;
+IdModule  = mysmd:BMP180;
+EndCmp
+
+BeginCmp
+TimeStamp = /55193B8C;
+Reference = U2;
+ValeurCmp = MAX1724;
+IdModule  = libcms:SOT23_6;
+EndCmp
+
+BeginCmp
+TimeStamp = /55085149;
+Reference = U3;
+ValeurCmp = SI7021;
+IdModule  = mysmd:DFN-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /5508516F;
+Reference = U4;
+ValeurCmp = M74VHC1GT08;
+IdModule  = libcms:SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /551971FC;
+Reference = U5;
+ValeurCmp = MCP1702;
+IdModule  = libcms:SOT23;
+EndCmp
+
+BeginCmp
+TimeStamp = /5553456A;
+Reference = U6;
+ValeurCmp = LSM9DS0;
+IdModule  = mysmd:LGA24;
+EndCmp
+
+EndListe

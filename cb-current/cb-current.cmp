@@ -1,0 +1,206 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Tue 14 Apr 2015 07:24:51 PM CEST
+
+BeginCmp
+TimeStamp = /552D08EB;
+Reference = ANT1;
+ValeurCmp = ANTENNA;
+IdModule  = myconnectors:SMA_RightAngle_Tyco;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08DF;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = myconnectors:JMP-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08DC;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08D3;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08CA;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D2F8B;
+Reference = C4;
+ValeurCmp = 10u;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D0927;
+Reference = C5;
+ValeurCmp = 1u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D3288;
+Reference = C6;
+ValeurCmp = 10u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D327B;
+Reference = C7;
+ValeurCmp = 1u;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D3417;
+Reference = C8;
+ValeurCmp = 100n;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08DD;
+Reference = P1;
+ValeurCmp = CONN_3;
+IdModule  = mysmd:audio_jack_smd_01;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08D2;
+Reference = P2;
+ValeurCmp = CONN_3;
+IdModule  = mysmd:audio_jack_smd_01;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08CF;
+Reference = P3;
+ValeurCmp = CONN_3;
+IdModule  = mysmd:audio_jack_smd_01;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08E3;
+Reference = P4;
+ValeurCmp = CONN_01X09;
+IdModule  = mysmd:audio_jack_smd_01;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D6167;
+Reference = P5;
+ValeurCmp = CONN_01X02;
+IdModule  = myconnectors:JMP-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08E5;
+Reference = PS1;
+ValeurCmp = PANSTAMP_NRG2;
+IdModule  = mysmd:PANSTAMP_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08D9;
+Reference = R1;
+ValeurCmp = 470k;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08DA;
+Reference = R2;
+ValeurCmp = 470k;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08D6;
+Reference = R3;
+ValeurCmp = 470k;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08D5;
+Reference = R4;
+ValeurCmp = 470k;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08DE;
+Reference = R5;
+ValeurCmp = 100;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08D1;
+Reference = R6;
+ValeurCmp = 100;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08CE;
+Reference = R7;
+ValeurCmp = 470k;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08CD;
+Reference = R8;
+ValeurCmp = 470k;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08D0;
+Reference = R9;
+ValeurCmp = 100;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08E9;
+Reference = R10;
+ValeurCmp = 10k;
+IdModule  = old_mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08E1;
+Reference = SW1;
+ValeurCmp = SW_PUSH_SMALL;
+IdModule  = mysmd:switch-tact-noah;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D08E8;
+Reference = TH1;
+ValeurCmp = THERMISTOR;
+IdModule  = mysmd:SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /552D0925;
+Reference = U1;
+ValeurCmp = MCP1702-3.0V;
+IdModule  = libcms:SOT23;
+EndCmp
+
+EndListe
