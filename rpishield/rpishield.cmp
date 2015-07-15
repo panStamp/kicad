@@ -1,0 +1,108 @@
+Cmp-Mod V01 Created by CvPcb (2012-nov-02)-testing date = Fri 11 Jan 2013 03:53:21 PM CET
+
+BeginCmp
+TimeStamp = /50EFF7CD;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = linx_bat-hld-001;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FA10C95;
+Reference = C1;
+ValeurCmp = 4.7u;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F97D53A;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /50F0089D;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /50F01076;
+Reference = C4;
+ValeurCmp = 1u;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /50F01257;
+Reference = C5;
+ValeurCmp = 1u;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CC93692;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /50EFE109;
+Reference = P1;
+ValeurCmp = CONN_13X2;
+IdModule  = pin_array_13x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4CC9365B;
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /50EFF2F9;
+Reference = R2;
+ValeurCmp = 4k7;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /50EFF2F3;
+Reference = R3;
+ValeurCmp = 4k7;
+IdModule  = SM0603S;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E20393C;
+Reference = U1;
+ValeurCmp = PANSTAMP_02;
+IdModule  = PANSTAMP_02;
+EndCmp
+
+BeginCmp
+TimeStamp = /50EFF1EC;
+Reference = U2;
+ValeurCmp = DS1338;
+IdModule  = SO8E;
+EndCmp
+
+BeginCmp
+TimeStamp = /50F01025;
+Reference = U3;
+ValeurCmp = MCP1702;
+IdModule  = SOT23;
+EndCmp
+
+BeginCmp
+TimeStamp = /50EFF5CD;
+Reference = X1;
+ValeurCmp = 32.768KHz;
+IdModule  = AB26TRB;
+EndCmp
+
+EndListe
