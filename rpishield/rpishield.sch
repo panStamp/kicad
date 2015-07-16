@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:rpishield-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -11,6 +10,7 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
+LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -67,7 +67,7 @@ L C-RESCUE-rpishield C1
 U 1 1 4FA10C95
 P 2550 6200
 F 0 "C1" H 2600 6300 50  0000 L CNN
-F 1 "4.7u" H 2600 6100 50  0000 L CNN
+F 1 "10u" H 2600 6100 50  0000 L CNN
 F 2 "mysmd:SM0603S" H 2550 6200 60  0001 C CNN
 F 3 "" H 2550 6200 60  0001 C CNN
 	1    2550 6200
