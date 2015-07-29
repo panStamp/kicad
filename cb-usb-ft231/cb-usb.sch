@@ -504,10 +504,10 @@ F 3 "" H 5800 3050 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 6000 3150
-Text Label 3750 7000 2    60   ~ 0
-TEST
-Text Label 3750 6900 2    60   ~ 0
-RESET
+Text Label 3950 7000 2    60   ~ 0
+NRG_TEST
+Text Label 3950 6900 2    60   ~ 0
+NRG_RESET
 Text Label 3750 6800 2    60   ~ 0
 D7
 Text Label 3750 6600 2    60   ~ 0
@@ -813,9 +813,9 @@ Wire Wire Line
 Wire Wire Line
 	3500 7100 3300 7100
 Wire Wire Line
-	3300 6900 3750 6900
+	3300 6900 3950 6900
 Wire Wire Line
-	3300 7000 3750 7000
+	3300 7000 3950 7000
 Wire Wire Line
 	1650 4850 2450 4850
 Wire Wire Line
