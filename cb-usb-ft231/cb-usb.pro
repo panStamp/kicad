@@ -1,4 +1,4 @@
-update=Sat 25 Jul 2015 04:26:33 PM CEST
+update=Fri 11 Sep 2015 09:15:30 PM CEST
 last_client=kicad
 [cvpcb]
 version=1
@@ -105,3 +105,13 @@ LibName48=toshiba
 LibName49=ftdichip
 LibName50=ftdi4
 LibName51=ftdichip-3
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=/home/daniel/development/panstamp_git/kicad/cb-usb-ft231/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
