@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cb-minibat-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -47,7 +47,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Clima sensor board for panStamp"
+Title "Minibat sensor board for panStamp"
 Date "17 Mar 2015"
 Rev "1.0"
 Comp "www.panstamp.com"
@@ -993,7 +993,7 @@ $EndComp
 Text Label 9300 1700 0    60   ~ 0
 TOANT
 $Comp
-L D D1
+L D-RESCUE-cb-minibat D1
 U 1 1 55474E1B
 P 3800 7000
 F 0 "D1" H 3800 7100 50  0000 C CNN
