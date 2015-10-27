@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 0.201510060346+6247~30~ubuntu14.04.1-product)
+(kicad_pcb (version 4) (host pcbnew 0.201510261816+6282~30~ubuntu14.04.1-product)
 
   (general
     (links 90)
@@ -14,7 +14,7 @@
 
   (page A4)
   (title_block
-    (title "USB carrier board for panStamp, aka panStick")
+    (title "Long distance carrier board for panStamp")
     (date "25 Feb 2015")
     (rev 1.0)
     (company panStamp)
