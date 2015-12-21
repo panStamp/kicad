@@ -15900,7 +15900,7 @@
   (gr_text GND (at 132.588 104.648) (layer F.SilkS)
     (effects (font (size 1.27 1.016) (thickness 0.1778)))
   )
-  (gr_text "uStation\n1.0" (at 124.968 106.68) (layer F.SilkS) (tstamp 55011D29)
+  (gr_text "wifiStick\n1.0" (at 124.968 106.68) (layer F.SilkS) (tstamp 55011D29)
     (effects (font (size 1.27 1.143) (thickness 0.1524)))
   )
   (gr_text www.panstamp.com (at 124.968 109.474) (layer F.SilkS)
