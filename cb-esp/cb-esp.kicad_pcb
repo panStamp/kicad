@@ -1,11 +1,11 @@
-(kicad_pcb (version 4) (host pcbnew 0.201512201246+6385~39~ubuntu14.04.1-stable)
+(kicad_pcb (version 4) (host pcbnew 0.201511131146+6311~30~ubuntu14.04.1-product)
 
   (general
     (links 58)
     (no_connects 0)
     (area 108.553467 47.946859 141.512074 116.7956)
     (thickness 1.6002)
-    (drawings 42)
+    (drawings 43)
     (tracks 529)
     (zones 0)
     (modules 24)
@@ -15451,12 +15451,12 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x07 (layer Front) (tedit 56743A1E) (tstamp 56761ECF)
+  (module Pin_Headers:Pin_Header_Straight_1x07 (layer Front) (tedit 56788ABF) (tstamp 56761ECF)
     (at 113.6142 86.6648)
     (descr "Through hole pin header")
     (tags "pin header")
     (path /5671F158)
-    (fp_text reference P2 (at 2.2098 8.9662 90) (layer F.SilkS)
+    (fp_text reference P2 (at 0.7366 3.5306 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN_01X07 (at 0 -3.1) (layer F.Fab)
@@ -15888,6 +15888,9 @@
       (net 9 /ESP_TXD))
   )
 
+  (gr_text RESET (at 118.2116 95.7834) (layer F.SilkS)
+    (effects (font (size 1.27 1.016) (thickness 0.1524)))
+  )
   (gr_text +5V (at 117.856 105.41) (layer F.SilkS) (tstamp 56747216)
     (effects (font (size 1.27 1.016) (thickness 0.1778)))
   )
