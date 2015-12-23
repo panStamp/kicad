@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -53,8 +52,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CO2 carrier board"
-Date "22 Sep 2015"
-Rev "1.0"
+Date "2015-12-23"
+Rev "1.1"
 Comp "www.panstamp.com"
 Comment1 ""
 Comment2 ""
@@ -528,7 +527,7 @@ SCL
 Text Label 8050 5400 0    60   ~ 0
 SDA
 Text Label 7000 3450 0    60   ~ 0
-RXD
+TO_RXD
 Wire Wire Line
 	4250 6650 4250 6750
 Wire Wire Line
@@ -901,4 +900,23 @@ NoConn ~ 3950 3400
 NoConn ~ 1950 3400
 NoConn ~ 1950 3300
 NoConn ~ 1950 3200
+Wire Wire Line
+	4850 4200 4400 4200
+Text Label 4400 4200 0    60   ~ 0
+TO_RXD
+Text Label 5950 4200 2    60   ~ 0
+RXD
+$Comp
+L JUMPER JP1
+U 1 1 567B6C49
+P 5150 4200
+F 0 "JP1" H 5150 4465 50  0000 C CNN
+F 1 "JUMPER" H 5150 4373 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5150 4200 50  0001 C CNN
+F 3 "" H 5150 4200 50  0000 C CNN
+	1    5150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4200 5950 4200
 $EndSCHEMATC
