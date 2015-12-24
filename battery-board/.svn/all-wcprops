@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/817/trunk/kicad/battery-board
+END
+battery-board.net
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/812/trunk/kicad/battery-board/battery-board.net
+END
+battery-board.brd
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/817/trunk/kicad/battery-board/battery-board.brd
+END
+battery-board-cache.lib
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/817/trunk/kicad/battery-board/battery-board-cache.lib
+END
+battery-board.sch
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/817/trunk/kicad/battery-board/battery-board.sch
+END
+battery-board.cmp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/812/trunk/kicad/battery-board/battery-board.cmp
+END
+battery-board.pro
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/817/trunk/kicad/battery-board/battery-board.pro
+END
