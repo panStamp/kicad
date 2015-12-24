@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:cb_co2-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -52,10 +51,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "CO2 carrier board"
+Title "panStamp CO2 battery board"
 Date "2015-12-23"
 Rev "1.1"
-Comp "www.panstamp.com"
+Comp "panStamp (www.panstamp.com)"
 Comment1 ""
 Comment2 ""
 Comment3 ""
