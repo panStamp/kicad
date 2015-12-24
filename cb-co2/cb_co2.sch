@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cb_co2-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -929,7 +930,7 @@ F 3 "" H 4700 2150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 2000 4700 1950
+	4700 1300 4700 2000
 Connection ~ 4700 1950
 Wire Wire Line
 	4700 2350 4700 2300
@@ -959,8 +960,6 @@ Wire Wire Line
 	5500 2350 5500 2300
 Wire Wire Line
 	5400 1950 5600 1950
-Wire Wire Line
-	5500 1200 5500 2000
 $Comp
 L INDUCTOR L3
 U 1 1 567B262E
@@ -999,7 +998,7 @@ $EndComp
 Wire Wire Line
 	5700 1600 5700 1500
 Wire Wire Line
-	5500 1300 5700 1300
+	4700 1300 5700 1300
 $Comp
 L CONN_01X01 P3
 U 1 1 567BD8FD
@@ -1012,4 +1011,8 @@ F 3 "" H 5500 1000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 5500 1300
+Wire Wire Line
+	5500 2000 5500 1950
+Wire Wire Line
+	5500 1300 5500 1200
 $EndSCHEMATC
