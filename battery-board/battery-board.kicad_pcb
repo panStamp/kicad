@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 0.201601141852+6469~42~ubuntu14.04.1-product)
+(kicad_pcb (version 4) (host pcbnew 0.201601211448+6504~42~ubuntu14.04.1-product)
 
   (general
     (links 91)
@@ -80,7 +80,8 @@
     (mod_text_width 0.3048)
     (pad_size 1.524 1.524)
     (pad_drill 1.016)
-    (pad_to_mask_clearance 0)
+    (pad_to_mask_clearance 0.0762)
+    (solder_mask_min_width 0.1016)
     (aux_axis_origin 162.52952 122.1486)
     (visible_elements FFFFF7BF)
     (pcbplotparams
