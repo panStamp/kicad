@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 0.201512201246+6385~39~ubuntu14.04.1-stable)
+(kicad_pcb (version 4) (host pcbnew 0.201601211448+6504~42~ubuntu14.04.1-product)
 
   (general
     (links 67)
     (no_connects 0)
-    (area 116.717219 71.084879 142.508661 127.283401)
+    (area 113.793486 64.063159 145.991514 132.5316)
     (thickness 1.6002)
     (drawings 83)
     (tracks 682)
@@ -14,10 +14,10 @@
 
   (page A4)
   (title_block
-    (title "USB carrier board for panStamp, aka panStick")
-    (date "25 Feb 2015")
-    (rev 4.0)
-    (company panStamp)
+    (title "RGB driver board for panStamp")
+    (date 2016-01-22)
+    (rev 2.0)
+    (company www.panstamp.com)
   )
 
   (layers
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
@@ -139,7 +139,7 @@
     (aux_axis_origin 162.52952 122.1486)
     (visible_elements FFFFF7BF)
     (pcbplotparams
-      (layerselection 0x010f0_80000001)
+      (layerselection 0x010f0_fffffff9)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.150000)
@@ -30696,7 +30696,7 @@
   (gr_line (start 116.90772 103.85008) (end 116.90772 103.37008) (angle 90) (layer Edge.Cuts) (width 0.381))
   (gr_line (start 142.30772 124.51008) (end 142.30772 103.82008) (angle 90) (layer Edge.Cuts) (width 0.381))
   (gr_line (start 116.90772 103.88008) (end 116.90772 124.98008) (angle 90) (layer Edge.Cuts) (width 0.381))
-  (gr_text "RGB\n1.0" (at 121.68 75.885) (layer F.SilkS) (tstamp 55011D29)
+  (gr_text "RGB\n2.0" (at 121.68 75.885) (layer F.SilkS) (tstamp 55011D29)
     (effects (font (size 1.27 1.143) (thickness 0.1524)))
   )
   (gr_text "RGB driver\nboard" (at 137.58 75.86) (layer F.SilkS)

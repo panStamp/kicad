@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:cb-rgb-rescue
 LIBS:power
 LIBS:digi
 LIBS:mycomponents
@@ -35,8 +34,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "panStamp RGB driver board"
-Date "21 may 2012"
-Rev "1.0"
+Date "2016-01-22"
+Rev "2.0"
 Comp "www.panstamp.com"
 Comment1 ""
 Comment2 ""
