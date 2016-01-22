@@ -45,13 +45,14 @@ LIBS:mcp3304
 LIBS:microchip_mcp2120
 LIBS:microchip-mcp125x-xxx
 LIBS:toshiba
+LIBS:ESP8266
 LIBS:esp-ht-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "panStamp Humidity and Temperature board for ESP8266"
+Title "panStamp ambient sensor board for ESP8266"
 Date "2015-11-28"
 Rev "1.0"
 Comp "panStamp (www.panstamp.com)"
@@ -741,7 +742,9 @@ Connection ~ 2600 4850
 Wire Wire Line
 	2700 4850 2600 4850
 Wire Wire Line
-	2600 4950 2600 4700
+	2600 4950 2600 4850
+Wire Wire Line
+	2600 4850 2600 4700
 Wire Wire Line
 	2700 4950 2600 4950
 Wire Wire Line
@@ -771,7 +774,9 @@ Connection ~ 8000 5150
 Wire Wire Line
 	8000 5150 8350 5150
 Wire Wire Line
-	8000 5200 8000 5100
+	8000 5200 8000 5150
+Wire Wire Line
+	8000 5150 8000 5100
 Wire Wire Line
 	8000 5500 8000 5600
 Wire Wire Line
@@ -783,7 +788,9 @@ Wire Wire Line
 Wire Wire Line
 	7900 3450 7450 3450
 Wire Wire Line
-	1900 6300 1800 6300
+	1900 6300 1850 6300
+Wire Wire Line
+	1850 6300 1800 6300
 Wire Wire Line
 	3350 6400 3350 6300
 Wire Wire Line
@@ -819,16 +826,30 @@ Connection ~ 3350 6300
 Wire Wire Line
 	3350 6750 3350 6700
 Wire Wire Line
-	5450 6200 5450 6400
+	5450 6200 5450 6300
 Wire Wire Line
-	4650 6300 5450 6300
+	5450 6300 5450 6400
+Wire Wire Line
+	4650 6300 4750 6300
+Wire Wire Line
+	4750 6300 5100 6300
+Wire Wire Line
+	5100 6300 5450 6300
 Wire Wire Line
 	4250 6750 4250 6600
 Connection ~ 3700 6300
 Wire Wire Line
 	3700 6300 3700 6400
 Wire Wire Line
-	2400 6300 3850 6300
+	2400 6300 2500 6300
+Wire Wire Line
+	2500 6300 3100 6300
+Wire Wire Line
+	3100 6300 3350 6300
+Wire Wire Line
+	3350 6300 3700 6300
+Wire Wire Line
+	3700 6300 3850 6300
 Wire Wire Line
 	3700 6750 3700 6700
 Wire Wire Line
@@ -849,7 +870,9 @@ Connection ~ 8700 1750
 Wire Wire Line
 	8700 1650 8700 1750
 Wire Wire Line
-	8750 1750 8350 1750
+	8750 1750 8700 1750
+Wire Wire Line
+	8700 1750 8350 1750
 Wire Wire Line
 	2150 2250 2850 2250
 Wire Wire Line
@@ -866,7 +889,9 @@ Wire Wire Line
 Wire Wire Line
 	6200 4500 6200 4550
 Wire Wire Line
-	6000 4500 6200 4500
+	6000 4500 6100 4500
+Wire Wire Line
+	6100 4500 6200 4500
 Wire Wire Line
 	6000 4550 6000 4500
 Connection ~ 6000 4950
@@ -878,9 +903,13 @@ Wire Wire Line
 Wire Wire Line
 	6850 5600 6850 5550
 Wire Wire Line
-	5750 5100 6250 5100
+	5750 5100 6200 5100
 Wire Wire Line
-	5750 4950 6250 4950
+	6200 5100 6250 5100
+Wire Wire Line
+	5750 4950 6000 4950
+Wire Wire Line
+	6000 4950 6250 4950
 Wire Wire Line
 	6850 4500 6850 4450
 Wire Wire Line

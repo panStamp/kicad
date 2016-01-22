@@ -1,11 +1,11 @@
-(kicad_pcb (version 4) (host pcbnew 0.201512211246+6391~39~ubuntu14.04.1-stable)
+(kicad_pcb (version 4) (host pcbnew 0.201601211448+6504~42~ubuntu14.04.1-product)
 
   (general
     (links 60)
     (no_connects 0)
     (area 133.447065 41.2496 163.844514 102.9716)
     (thickness 1.6002)
-    (drawings 28)
+    (drawings 29)
     (tracks 460)
     (zones 0)
     (modules 29)
@@ -39,7 +39,7 @@
   )
 
   (setup
-    (last_trace_width 0.762)
+    (last_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
@@ -71,11 +71,12 @@
     (mod_text_width 0.3048)
     (pad_size 1.7 1.7)
     (pad_drill 1.016)
-    (pad_to_mask_clearance 0.254)
+    (pad_to_mask_clearance 0.0762)
+    (solder_mask_min_width 0.1016)
     (aux_axis_origin 0 0)
     (visible_elements FFFFF7FF)
     (pcbplotparams
-      (layerselection 0x010e0_80000001)
+      (layerselection 0x010e0_ffffffff)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -15948,6 +15949,9 @@
       (net 4 GND))
   )
 
+  (gr_text v.1.0 (at 140.208 95.25) (layer F.SilkS) (tstamp 56A62888)
+    (effects (font (size 1.524 1.27) (thickness 0.1778)))
+  )
   (gr_text "ESP-HT Wifi\nAmbient\nsensor" (at 148.59 58.42) (layer F.SilkS)
     (effects (font (size 1.27 1.016) (thickness 0.1524)))
   )
@@ -15981,7 +15985,7 @@
   (gr_text GPIO0 (at 148.64 80.75 90) (layer F.SilkS) (tstamp 566AD0B5)
     (effects (font (size 1.524 1.27) (thickness 0.1778)))
   )
-  (gr_text RESET (at 138.7602 80.7974 90) (layer F.SilkS)
+  (gr_text RESET (at 138.684 80.772 90) (layer F.SilkS)
     (effects (font (size 1.524 1.27) (thickness 0.1778)))
   )
   (gr_text "+5V  GND" (at 148.36 98.45) (layer F.SilkS)
