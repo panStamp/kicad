@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 0.201511131146+6311~30~ubuntu14.04.1-product)
+(kicad_pcb (version 4) (host pcbnew 0.201601211448+6504~42~ubuntu14.04.1-product)
 
   (general
     (links 43)
     (no_connects 0)
-    (area 116.717219 71.084879 142.508661 127.283401)
+    (area 113.793486 66.3956 144.794514 132.5316)
     (thickness 1.6002)
     (drawings 45)
     (tracks 418)
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
@@ -15701,7 +15701,7 @@
       (solder_mask_margin 0.5) (clearance 0.5))
   )
 
-  (gr_text "Wifi RGB driver board" (at 118.7958 111.8616 90) (layer F.SilkS)
+  (gr_text "Wifi RGB driver board 1.0" (at 118.7958 111.8616 90) (layer F.SilkS)
     (effects (font (size 1.27 1.016) (thickness 0.1524)))
   )
   (gr_text "ESP-HT Wifi\nRGB driver\nboard" (at 129.5654 80.2132) (layer F.SilkS)

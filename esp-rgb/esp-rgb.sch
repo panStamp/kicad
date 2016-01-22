@@ -33,7 +33,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "myconnectors:PIN_ARRAY_8X1"
+Title "RGB driver board for ESP8266 module"
 Date "2015-12-05"
 Rev "1.0"
 Comp "www.panstamp.com"
