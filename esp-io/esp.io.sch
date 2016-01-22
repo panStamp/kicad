@@ -45,6 +45,7 @@ LIBS:mcp3304
 LIBS:microchip_mcp2120
 LIBS:microchip-mcp125x-xxx
 LIBS:toshiba
+LIBS:ESP8266
 LIBS:esp.io-cache
 EELAYER 25 0
 EELAYER END
@@ -63,12 +64,10 @@ $EndDescr
 Text Label 5350 4200 2    60   ~ 0
 SCL
 Text GLabel 5550 4300 2    60   Output ~ 0
-BINOUT3
-Text GLabel 2400 4200 0    60   Output ~ 0
 BINOUT2
-Text GLabel 2400 4100 0    60   Output ~ 0
+Text GLabel 2400 4200 0    60   Output ~ 0
 BINOUT1
-Text GLabel 2400 4000 0    60   Output ~ 0
+Text GLabel 2400 4100 0    60   Output ~ 0
 BINOUT0
 $Comp
 L +12V #PWR01
@@ -404,7 +403,7 @@ GPIO4
 Text Label 10100 2200 2    60   ~ 0
 GPIO13
 Text Label 10100 1900 2    60   ~ 0
-GPIO2
+GPIO16
 Text Label 10100 1300 2    60   ~ 0
 GPIO5
 $Comp
@@ -668,7 +667,7 @@ NoConn ~ 3800 4900
 NoConn ~ 3900 4900
 NoConn ~ 4000 4900
 Text GLabel 5550 4100 2    60   Output ~ 0
-BINOUT4
+BINOUT3
 $Comp
 L CONN_01X02 P2
 U 1 1 5658C1CB
@@ -719,28 +718,6 @@ Text Label 7450 4150 0    60   ~ 0
 RESET
 Text Label 7450 4050 0    60   ~ 0
 GPIO15
-$Comp
-L D_Schottky_x2_ACom_KKA D12
-U 1 1 566023CE
-P 8700 2350
-F 0 "D12" H 8750 2250 50  0000 C CNN
-F 1 "D_Schottky_x2_ACom_KKA" H 8700 2450 50  0001 C CNN
-F 2 "mysmd:SOT23" H 8700 2350 60  0001 C CNN
-F 3 "" H 8700 2350 60  0000 C CNN
-	1    8700 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L D_Schottky_x2_ACom_KKA D2
-U 1 1 566027B1
-P 8000 2350
-F 0 "D2" H 8050 2250 50  0000 C CNN
-F 1 "D_Schottky_x2_ACom_KKA" H 8000 2450 50  0001 C CNN
-F 2 "mysmd:SOT23" H 8000 2350 60  0001 C CNN
-F 3 "" H 8000 2350 60  0000 C CNN
-	1    8000 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 6450 3250 6600
 Wire Wire Line
@@ -788,8 +765,6 @@ Wire Wire Line
 	4650 4200 5350 4200
 Wire Wire Line
 	4650 4300 5550 4300
-Wire Wire Line
-	2850 4000 2400 4000
 Wire Wire Line
 	2850 4100 2400 4100
 Wire Wire Line
@@ -926,44 +901,6 @@ Wire Wire Line
 	7300 2000 7200 2000
 Wire Wire Line
 	7200 2200 7200 2100
-Wire Wire Line
-	9000 2350 9000 2000
-Connection ~ 9000 2000
-Wire Wire Line
-	8400 2350 8400 1700
-Connection ~ 8400 1700
-Wire Wire Line
-	8300 2350 8300 1400
-Connection ~ 8300 1400
-Wire Wire Line
-	7700 2350 7700 1100
-Connection ~ 7700 1100
-$Comp
-L GND #PWR026
-U 1 1 566039BE
-P 8700 2600
-F 0 "#PWR026" H 8700 2600 30  0001 C CNN
-F 1 "GND" H 8700 2530 30  0001 C CNN
-F 2 "" H 8700 2600 60  0001 C CNN
-F 3 "" H 8700 2600 60  0001 C CNN
-	1    8700 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 2550 8700 2600
-$Comp
-L GND #PWR027
-U 1 1 56603B0E
-P 8000 2600
-F 0 "#PWR027" H 8000 2600 30  0001 C CNN
-F 1 "GND" H 8000 2530 30  0001 C CNN
-F 2 "" H 8000 2600 60  0001 C CNN
-F 3 "" H 8000 2600 60  0001 C CNN
-	1    8000 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 2600 8000 2550
 $Comp
 L D_Schottky_x2_ACom_KKA D1
 U 1 1 566043CC
@@ -1005,4 +942,6 @@ Connection ~ 2400 6000
 Wire Wire Line
 	3000 6150 3000 6000
 Connection ~ 3000 6000
+Wire Wire Line
+	2850 4000 2500 4000
 $EndSCHEMATC
