@@ -1,5 +1,5 @@
-update=Tue 15 Dec 2015 12:35:38 PM CET
-last_client=eeschema
+update=Fri 22 Jan 2016 01:31:51 PM CET
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -104,3 +104,14 @@ LibName45=mcp3304
 LibName46=microchip_mcp2120
 LibName47=microchip-mcp125x-xxx
 LibName48=toshiba
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+ERC_TestSimilarLabels=1
