@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cb-esp-rescue
 LIBS:power
 LIBS:digi
 LIBS:mycomponents
@@ -34,7 +35,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Carrier board for panStamp and ESP-12E"
-Date "2015-12-18"
+Date "2016-02-05"
 Rev "1.0"
 Comp "www.panstamp.com"
 Comment1 ""
@@ -90,13 +91,13 @@ Wire Wire Line
 Wire Wire Line
 	6850 5400 7300 5400
 Wire Wire Line
-	6850 5300 7300 5300
+	6850 5300 7600 5300
 Wire Wire Line
 	6850 5600 7250 5600
 Wire Wire Line
 	6850 5500 6950 5500
 $Comp
-L PANSTAMP_NRG2 PS1
+L PANSTAMP_NRG2-RESCUE-cb-esp PS1
 U 1 1 55D4CB6C
 P 3250 2750
 F 0 "PS1" H 3850 3850 60  0000 C CNN
@@ -451,7 +452,7 @@ F 3 "" H 7800 950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 5200 7900 5200
+	7600 5200 8350 5200
 Text Label 7900 5200 0    60   ~ 0
 GPIO15
 Text Label 7900 5400 0    60   ~ 0
@@ -770,4 +771,6 @@ Wire Wire Line
 	9100 2650 9100 2700
 Wire Wire Line
 	8200 2550 9400 2550
+Wire Wire Line
+	7600 5300 7600 5200
 $EndSCHEMATC
