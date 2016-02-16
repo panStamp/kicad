@@ -132,7 +132,7 @@ D10
 Text Label 1500 2200 0    60   ~ 0
 D11
 Text Label 1500 2100 0    60   ~ 0
-D12
+A4
 Text Label 1500 1900 0    60   ~ 0
 D14
 $Comp
@@ -270,7 +270,7 @@ D14
 Text Label 7650 3850 0    60   ~ 0
 A5
 Text Label 7650 3950 0    60   ~ 0
-D12
+A4
 Text Label 7650 4050 0    60   ~ 0
 D11
 Text Label 7650 4150 0    60   ~ 0
@@ -798,11 +798,11 @@ Text Label 1500 3200 0    60   ~ 0
 D2
 Text Label 1500 2000 0    60   ~ 0
 A5
-Text GLabel 9000 1650 2    60   Input ~ 0
+Text GLabel 9000 1800 2    60   Input ~ 0
 EN_SENSOR
 Wire Wire Line
-	9000 1650 8250 1650
-Text Label 8250 1650 0    60   ~ 0
+	9000 1800 8250 1800
+Text Label 8250 1800 0    60   ~ 0
 D20
 Text GLabel 9000 1350 2    60   Input ~ 0
 A5
@@ -822,11 +822,11 @@ Wire Wire Line
 	9000 1050 8250 1050
 Text Label 8250 1200 0    60   ~ 0
 D15
-Text GLabel 9000 1800 2    60   Input ~ 0
+Text GLabel 9000 1950 2    60   Input ~ 0
 EN_EXTERNAL
 Wire Wire Line
-	9000 1800 8250 1800
-Text Label 8250 1800 0    60   ~ 0
+	9000 1950 8250 1950
+Text Label 8250 1950 0    60   ~ 0
 D16
 $Comp
 L CONN_01X09 P6
@@ -901,37 +901,49 @@ Wire Wire Line
 	9000 1500 8250 1500
 Text Label 8250 1500 0    60   ~ 0
 A0
-Text GLabel 9000 2100 2    60   Input ~ 0
-ACC_INT1
-Wire Wire Line
-	9000 2100 8250 2100
-Text Label 8250 2100 0    60   ~ 0
-D1
 Text GLabel 9000 2250 2    60   Input ~ 0
-ACC_INT2
+ACC_INT1
 Wire Wire Line
 	9000 2250 8250 2250
 Text Label 8250 2250 0    60   ~ 0
+D1
+Text GLabel 9000 2400 2    60   Input ~ 0
+ACC_INT2
+Wire Wire Line
+	9000 2400 8250 2400
+Text Label 8250 2400 0    60   ~ 0
 D2
-Text GLabel 9000 1950 2    60   Input ~ 0
+Text GLabel 9000 2100 2    60   Input ~ 0
 EN_ACC
 Wire Wire Line
-	9000 1950 8250 1950
-Text Label 8250 1950 0    60   ~ 0
+	9000 2100 8250 2100
+Text Label 8250 2100 0    60   ~ 0
 D0
 Text GLabel 1500 3000 0    60   Input ~ 0
 SCL
 Text GLabel 1500 3100 0    60   Input ~ 0
 SDA
 $Comp
-L +BATT #PWR?
+L +BATT #PWR016
 U 1 1 56C22796
 P 9000 1500
-F 0 "#PWR?" H 9000 1350 50  0001 C CNN
+F 0 "#PWR016" H 9000 1350 50  0001 C CNN
 F 1 "+BATT" V 9018 1628 50  0000 L CNN
 F 2 "" H 9000 1500 50  0000 C CNN
 F 3 "" H 9000 1500 50  0000 C CNN
 	1    9000 1500
 	0    1    1    0   
 $EndComp
+Text Label 8250 900  0    60   ~ 0
+A4
+Text GLabel 9000 900  2    60   Input ~ 0
+4-20mA_INP
+Wire Wire Line
+	9000 900  8250 900 
+Text GLabel 9000 1650 2    60   Input ~ 0
+EN_4-20mA_SENS
+Wire Wire Line
+	9000 1650 8250 1650
+Text Label 8250 1650 0    60   ~ 0
+D17
 $EndSCHEMATC
