@@ -130,7 +130,7 @@ D9
 Text Label 1500 2300 0    60   ~ 0
 D10
 Text Label 1500 2200 0    60   ~ 0
-D11
+A3
 Text Label 1500 2100 0    60   ~ 0
 A4
 Text Label 1500 1900 0    60   ~ 0
@@ -272,7 +272,7 @@ A5
 Text Label 7650 3950 0    60   ~ 0
 A4
 Text Label 7650 4050 0    60   ~ 0
-D11
+A3
 Text Label 7650 4150 0    60   ~ 0
 D10
 Text Label 7650 4250 0    60   ~ 0
@@ -934,7 +934,7 @@ F 3 "" H 9000 1500 50  0000 C CNN
 	1    9000 1500
 	0    1    1    0   
 $EndComp
-Text Label 8250 900  0    60   ~ 0
+Text Label 8250 750  0    60   ~ 0
 A4
 Text GLabel 9000 900  2    60   Input ~ 0
 4-20mA_INP
@@ -946,4 +946,10 @@ Wire Wire Line
 	9000 1650 8250 1650
 Text Label 8250 1650 0    60   ~ 0
 D17
+Text Label 8250 900  0    60   ~ 0
+A3
+Text GLabel 9000 750  2    60   Input ~ 0
+VEXT
+Wire Wire Line
+	9000 750  8250 750 
 $EndSCHEMATC
