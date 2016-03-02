@@ -1,0 +1,452 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:atmega8
+LIBS:atmel89cxxxx
+LIBS:atmel-1
+LIBS:atmel-2005
+LIBS:avr
+LIBS:avr-1
+LIBS:avr-2
+LIBS:avr-3
+LIBS:avr-4
+LIBS:hopf
+LIBS:rfm-ash
+LIBS:mycomponents
+LIBS:mcp120-130
+LIBS:mcp3304
+LIBS:microchip_mcp2120
+LIBS:microchip-mcp125x-xxx
+LIBS:toshiba
+LIBS:cb-linkit-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "Linkit carrier board"
+Date "2016-03-01"
+Rev "1.0"
+Comp "panStamp (www.panstamp.com)"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 8500 5150 1250 750 
+U 56BD1CEB
+F0 "PSU" 60
+F1 "psu.sch" 60
+$EndSheet
+$Comp
+L SIM800L_module U6
+U 1 1 56BDBEAF
+P 4200 5550
+F 0 "U6" H 3950 5950 60  0000 C CNN
+F 1 "SIM800L_module" H 4200 5150 60  0000 C CNN
+F 2 "mymods:SIM800L_MODULE" H 4500 5250 60  0001 C CNN
+F 3 "" H 4500 5250 60  0000 C CNN
+	1    4200 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 56BDBEB7
+P 7200 2050
+F 0 "D1" H 7200 2150 50  0000 C CNN
+F 1 "LED" H 7200 1950 50  0000 C CNN
+F 2 "mysmd:SM0603S_POL" H 7200 2050 60  0001 C CNN
+F 3 "" H 7200 2050 60  0000 C CNN
+	1    7200 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 56BDBEBE
+P 7200 2450
+F 0 "R4" V 7280 2450 50  0000 C CNN
+F 1 "470" V 7200 2450 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 7200 2450 60  0001 C CNN
+F 3 "" H 7200 2450 60  0001 C CNN
+	1    7200 2450
+	-1   0    0    1   
+$EndComp
+Text Label 2500 5450 0    60   ~ 0
+SIM_RESET
+$Comp
+L R R10
+U 1 1 56BDBECF
+P 3150 5450
+F 0 "R10" V 3230 5450 50  0000 C CNN
+F 1 "1k" V 3150 5450 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 3150 5450 60  0001 C CNN
+F 3 "" H 3150 5450 60  0001 C CNN
+	1    3150 5450
+	0    -1   -1   0   
+$EndComp
+Text Label 2500 5600 0    60   ~ 0
+SIM_RXD
+$Comp
+L R R11
+U 1 1 56BDBED9
+P 3150 5600
+F 0 "R11" V 3230 5600 50  0000 C CNN
+F 1 "1k" V 3150 5600 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 3150 5600 60  0001 C CNN
+F 3 "" H 3150 5600 60  0001 C CNN
+	1    3150 5600
+	0    -1   -1   0   
+$EndComp
+Text Label 2500 5750 0    60   ~ 0
+SIM_TXD
+$Comp
+L R R12
+U 1 1 56BDBEED
+P 3150 5750
+F 0 "R12" V 3230 5750 50  0000 C CNN
+F 1 "1k" V 3150 5750 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 3150 5750 60  0001 C CNN
+F 3 "" H 3150 5750 60  0001 C CNN
+	1    3150 5750
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4700 5300
+NoConn ~ 4700 5400
+NoConn ~ 4700 5500
+NoConn ~ 4700 5600
+NoConn ~ 4700 5700
+NoConn ~ 4700 5800
+$Comp
+L GND #PWR01
+U 1 1 56BDBEFF
+P 3550 5900
+F 0 "#PWR01" H 3550 5900 30  0001 C CNN
+F 1 "GND" H 3550 5830 30  0001 C CNN
+F 2 "" H 3550 5900 60  0001 C CNN
+F 3 "" H 3550 5900 60  0001 C CNN
+	1    3550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VAA #PWR02
+U 1 1 56BDBF07
+P 3550 5200
+F 0 "#PWR02" H 3550 5050 50  0001 C CNN
+F 1 "VAA" H 3550 5350 50  0000 C CNN
+F 2 "" H 3550 5200 60  0000 C CNN
+F 3 "" H 3550 5200 60  0000 C CNN
+	1    3550 5200
+	1    0    0    -1  
+$EndComp
+Text Notes 2250 6450 0    60   ~ 0
+GPRS circuit
+$Sheet
+S 6900 5150 1250 750 
+U 56D56AAD
+F0 "RF" 60
+F1 "rf.sch" 60
+$EndSheet
+$Comp
+L Linkit_Smart_7688 U1
+U 1 1 56D6FC58
+P 3700 2600
+F 0 "U1" H 3675 3787 60  0000 C CNN
+F 1 "Linkit_Smart_7688" H 3675 3681 60  0000 C CNN
+F 2 "mymods:DIP36-1" H 4200 2000 60  0001 C CNN
+F 3 "" H 4200 2000 60  0000 C CNN
+	1    3700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 56D6FD7C
+P 2850 2700
+F 0 "#PWR03" H 2850 2700 30  0001 C CNN
+F 1 "GND" H 2850 2630 30  0001 C CNN
+F 2 "" H 2850 2700 60  0001 C CNN
+F 3 "" H 2850 2700 60  0001 C CNN
+	1    2850 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 56D6FE53
+P 2600 2850
+F 0 "#PWR04" H 2600 2700 50  0001 C CNN
+F 1 "+5V" H 2618 3024 50  0000 C CNN
+F 2 "" H 2600 2850 50  0000 C CNN
+F 3 "" H 2600 2850 50  0000 C CNN
+	1    2600 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2950 2900
+NoConn ~ 2950 2800
+Text Label 2400 2500 0    60   ~ 0
+SIM_RXD
+Text Label 2400 2600 0    60   ~ 0
+SIM_TXD
+NoConn ~ 3650 5300
+Text Label 2400 3100 0    60   ~ 0
+SIM_RESET
+NoConn ~ 2950 2400
+NoConn ~ 2950 2300
+NoConn ~ 2950 2200
+NoConn ~ 2950 2100
+NoConn ~ 2950 2000
+NoConn ~ 2950 1900
+NoConn ~ 2950 1800
+Wire Wire Line
+	7200 2650 7200 2600
+Wire Wire Line
+	7200 2250 7200 2300
+Wire Wire Line
+	3000 5450 2500 5450
+Wire Wire Line
+	3300 5450 3450 5450
+Wire Wire Line
+	3000 5600 2500 5600
+Wire Wire Line
+	3300 5600 3650 5600
+Wire Wire Line
+	3000 5750 2500 5750
+Wire Wire Line
+	3300 5750 3450 5750
+Wire Wire Line
+	3450 5450 3450 5500
+Wire Wire Line
+	3450 5500 3650 5500
+Wire Wire Line
+	3450 5750 3450 5700
+Wire Wire Line
+	3450 5700 3650 5700
+Wire Wire Line
+	3650 5800 3550 5800
+Wire Wire Line
+	3550 5800 3550 5900
+Wire Wire Line
+	3650 5400 3550 5400
+Wire Wire Line
+	3550 5400 3550 5200
+Wire Wire Line
+	2950 2700 2850 2700
+Wire Wire Line
+	2950 3000 2600 3000
+Wire Wire Line
+	2600 3000 2600 2850
+Wire Wire Line
+	2950 2600 2400 2600
+Wire Wire Line
+	2950 2500 2400 2500
+Wire Wire Line
+	2950 3100 2400 3100
+Text GLabel 4550 2200 2    60   Input ~ 0
+PS1_RXD
+Wire Wire Line
+	4550 2200 4400 2200
+Text GLabel 4550 2100 2    60   Input ~ 0
+PS1_TXD
+Wire Wire Line
+	4550 2100 4400 2100
+Text GLabel 4550 2000 2    60   Input ~ 0
+PS2_RXD
+Wire Wire Line
+	4550 2000 4400 2000
+Text GLabel 4550 1900 2    60   Input ~ 0
+PS2_TXD
+Wire Wire Line
+	4550 1900 4400 1900
+Text GLabel 4550 3200 2    60   Input ~ 0
+PS1_TEST
+Wire Wire Line
+	4550 3200 4400 3200
+Text GLabel 4550 3100 2    60   Input ~ 0
+PS1_RESET
+Wire Wire Line
+	4550 3100 4400 3100
+Text GLabel 4550 3000 2    60   Input ~ 0
+PS2_TEST
+Wire Wire Line
+	4550 3000 4400 3000
+Text GLabel 4550 2900 2    60   Input ~ 0
+PS2_RESET
+Wire Wire Line
+	4550 2900 4400 2900
+Wire Notes Line
+	2200 4750 2200 6300
+Wire Notes Line
+	2200 6300 5050 6300
+Wire Notes Line
+	5050 6300 5050 4750
+Wire Notes Line
+	5050 4750 2200 4750
+$Comp
+L R R1
+U 1 1 56D723C1
+P 6650 2850
+F 0 "R1" V 6730 2850 50  0000 C CNN
+F 1 "2k2" V 6650 2850 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 6650 2850 60  0001 C CNN
+F 3 "" H 6650 2850 60  0001 C CNN
+	1    6650 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 56D723C8
+P 7200 3250
+F 0 "#PWR05" H 7200 3250 30  0001 C CNN
+F 1 "GND" H 7200 3180 30  0001 C CNN
+F 2 "" H 7200 3250 60  0001 C CNN
+F 3 "" H 7200 3250 60  0001 C CNN
+	1    7200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_EBC Q1
+U 1 1 56D723CE
+P 7100 2850
+F 0 "Q1" H 7400 2900 50  0000 R CNN
+F 1 "Q_NPN_EBC" H 7700 2800 50  0000 R CNN
+F 2 "libcms:SOT23EBC" H 7300 2950 50  0001 C CNN
+F 3 "" H 7100 2850 50  0000 C CNN
+	1    7100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3250 7200 3050
+Wire Wire Line
+	6900 2850 6800 2850
+Wire Wire Line
+	7200 1800 7200 1850
+$Comp
+L +3V3 #PWR06
+U 1 1 56D72B7C
+P 7200 1800
+F 0 "#PWR06" H 7200 1650 50  0001 C CNN
+F 1 "+3V3" H 7218 1974 50  0000 C CNN
+F 2 "" H 7200 1800 50  0000 C CNN
+F 3 "" H 7200 1800 50  0000 C CNN
+	1    7200 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3300 2400 3300
+Wire Wire Line
+	2950 3400 2400 3400
+Text Label 2400 3300 0    60   ~ 0
+LED1
+Text Label 2400 3400 0    60   ~ 0
+LED2
+Wire Wire Line
+	6500 2850 6150 2850
+Text Label 6150 2850 0    60   ~ 0
+LED1
+$Comp
+L LED D2
+U 1 1 56D72F63
+P 8950 2050
+F 0 "D2" H 8950 2150 50  0000 C CNN
+F 1 "LED" H 8950 1950 50  0000 C CNN
+F 2 "mysmd:SM0603S_POL" H 8950 2050 60  0001 C CNN
+F 3 "" H 8950 2050 60  0000 C CNN
+	1    8950 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56D72F69
+P 8950 2450
+F 0 "R3" V 9030 2450 50  0000 C CNN
+F 1 "470" V 8950 2450 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 8950 2450 60  0001 C CNN
+F 3 "" H 8950 2450 60  0001 C CNN
+	1    8950 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8950 2650 8950 2600
+Wire Wire Line
+	8950 2250 8950 2300
+$Comp
+L R R2
+U 1 1 56D72F71
+P 8400 2850
+F 0 "R2" V 8480 2850 50  0000 C CNN
+F 1 "2k2" V 8400 2850 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 8400 2850 60  0001 C CNN
+F 3 "" H 8400 2850 60  0001 C CNN
+	1    8400 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 56D72F77
+P 8950 3250
+F 0 "#PWR07" H 8950 3250 30  0001 C CNN
+F 1 "GND" H 8950 3180 30  0001 C CNN
+F 2 "" H 8950 3250 60  0001 C CNN
+F 3 "" H 8950 3250 60  0001 C CNN
+	1    8950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_EBC Q2
+U 1 1 56D72F7D
+P 8850 2850
+F 0 "Q2" H 9150 2900 50  0000 R CNN
+F 1 "Q_NPN_EBC" H 9450 2800 50  0000 R CNN
+F 2 "libcms:SOT23EBC" H 9050 2950 50  0001 C CNN
+F 3 "" H 8850 2850 50  0000 C CNN
+	1    8850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3250 8950 3050
+Wire Wire Line
+	8650 2850 8550 2850
+Wire Wire Line
+	8950 1800 8950 1850
+$Comp
+L +3V3 #PWR08
+U 1 1 56D72F86
+P 8950 1800
+F 0 "#PWR08" H 8950 1650 50  0001 C CNN
+F 1 "+3V3" H 8968 1974 50  0000 C CNN
+F 2 "" H 8950 1800 50  0000 C CNN
+F 3 "" H 8950 1800 50  0000 C CNN
+	1    8950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2850 7900 2850
+Text Label 7900 2850 0    60   ~ 0
+LED2
+$EndSCHEMATC
