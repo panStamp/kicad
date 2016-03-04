@@ -53,7 +53,7 @@ encoding utf-8
 Sheet 3 3
 Title "Low-power RF interfaces"
 Date "2016-03-02"
-Rev "1.0"
+Rev "0.1"
 Comp "panStamp (www.panstamp.com)"
 Comment1 ""
 Comment2 ""

@@ -1,0 +1,277 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:atmega8
+LIBS:atmel89cxxxx
+LIBS:atmel-1
+LIBS:atmel-2005
+LIBS:avr
+LIBS:avr-1
+LIBS:avr-2
+LIBS:avr-3
+LIBS:avr-4
+LIBS:hopf
+LIBS:rfm-ash
+LIBS:mycomponents
+LIBS:mcp120-130
+LIBS:mcp3304
+LIBS:microchip_mcp2120
+LIBS:microchip-mcp125x-xxx
+LIBS:toshiba
+LIBS:cb-linkit-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ANTENNA ANT?
+U 1 1 56D99C90
+P 6850 3700
+F 0 "ANT?" H 7278 3903 60  0000 L CNN
+F 1 "ANTENNA" H 7278 3797 60  0000 L CNN
+F 2 "myconnectors:SMA_RightAngle_Tyco" H 6850 3700 60  0001 C CNN
+F 3 "" H 6850 3700 60  0000 C CNN
+	1    6850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56D99C97
+P 6400 3900
+F 0 "#PWR?" H 6400 3900 30  0001 C CNN
+F 1 "GND" H 6400 3830 30  0001 C CNN
+F 2 "" H 6400 3900 60  0001 C CNN
+F 3 "" H 6400 3900 60  0001 C CNN
+	1    6400 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3800 6400 3900
+$Comp
+L MBC13916 U?
+U 1 1 56D99C9E
+P 4800 3700
+F 0 "U?" H 4800 4087 60  0000 C CNN
+F 1 "MBC13916" H 4800 3981 60  0000 C CNN
+F 2 "mysmd:SOT-343R" H 4800 3600 60  0001 C CNN
+F 3 "" H 4800 3600 60  0000 C CNN
+	1    4800 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56D99CA5
+P 3950 3600
+F 0 "C?" H 4000 3700 50  0000 L CNN
+F 1 "1.5p" H 4000 3500 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 3950 3600 60  0001 C CNN
+F 3 "" H 3950 3600 60  0001 C CNN
+	1    3950 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 56D99CAC
+P 3700 3800
+F 0 "C?" H 3750 3900 50  0000 L CNN
+F 1 "3p" H 3750 3700 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 3700 3800 60  0001 C CNN
+F 3 "" H 3700 3800 60  0001 C CNN
+	1    3700 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 3600 3350 3600
+Wire Wire Line
+	3700 3650 3700 3600
+Connection ~ 3700 3600
+$Comp
+L GND #PWR?
+U 1 1 56D99CB6
+P 3700 4000
+F 0 "#PWR?" H 3700 4000 30  0001 C CNN
+F 1 "GND" H 3700 3930 30  0001 C CNN
+F 2 "" H 3700 4000 60  0001 C CNN
+F 3 "" H 3700 4000 60  0001 C CNN
+	1    3700 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3950 3700 4000
+$Comp
+L INDUCTOR_SMALL L?
+U 1 1 56D99CBD
+P 4200 3150
+F 0 "L?" V 4154 3228 50  0000 L CNN
+F 1 "10n" V 4246 3228 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0000 C CNN
+	1    4200 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 56D99CC4
+P 4200 2800
+F 0 "#PWR?" H 4200 2650 50  0001 C CNN
+F 1 "+3V3" H 4218 2974 50  0000 C CNN
+F 2 "" H 4200 2800 50  0000 C CNN
+F 3 "" H 4200 2800 50  0000 C CNN
+	1    4200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2900 4200 2800
+Wire Wire Line
+	4100 3600 4300 3600
+Wire Wire Line
+	4200 3400 4200 3600
+Connection ~ 4200 3600
+$Comp
+L C C?
+U 1 1 56D99CCE
+P 4000 3100
+F 0 "C?" H 4050 3200 50  0000 L CNN
+F 1 "100p" H 4050 3000 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 4000 3100 60  0001 C CNN
+F 3 "" H 4000 3100 60  0001 C CNN
+	1    4000 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 56D99CD5
+P 3700 3100
+F 0 "C?" H 3750 3200 50  0000 L CNN
+F 1 "10n" H 3750 3000 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 3700 3100 60  0001 C CNN
+F 3 "" H 3700 3100 60  0001 C CNN
+	1    3700 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 2950 3700 2850
+Wire Wire Line
+	3700 2850 4200 2850
+Connection ~ 4200 2850
+Wire Wire Line
+	4000 2950 4000 2850
+Connection ~ 4000 2850
+$Comp
+L GND #PWR?
+U 1 1 56D99CE1
+P 4000 3300
+F 0 "#PWR?" H 4000 3300 30  0001 C CNN
+F 1 "GND" H 4000 3230 30  0001 C CNN
+F 2 "" H 4000 3300 60  0001 C CNN
+F 3 "" H 4000 3300 60  0001 C CNN
+	1    4000 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56D99CE7
+P 3700 3300
+F 0 "#PWR?" H 3700 3300 30  0001 C CNN
+F 1 "GND" H 3700 3230 30  0001 C CNN
+F 2 "" H 3700 3300 60  0001 C CNN
+F 3 "" H 3700 3300 60  0001 C CNN
+	1    3700 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3300 4000 3250
+Wire Wire Line
+	3700 3300 3700 3250
+$Comp
+L INDUCTOR_SMALL L?
+U 1 1 56D99CEF
+P 5650 3600
+F 0 "L?" H 5650 3816 50  0000 C CNN
+F 1 "6.8n" H 5650 3724 50  0000 C CNN
+F 2 "mysmd:SM0603S" H 5650 3600 50  0001 C CNN
+F 3 "" H 5650 3600 50  0000 C CNN
+	1    5650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56D99CF6
+P 6150 3600
+F 0 "C?" H 6200 3700 50  0000 L CNN
+F 1 "47p" H 6200 3500 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 6150 3600 60  0001 C CNN
+F 3 "" H 6150 3600 60  0001 C CNN
+	1    6150 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3600 5300 3600
+Wire Wire Line
+	5900 3600 6000 3600
+Wire Wire Line
+	6400 3600 6300 3600
+$Comp
+L GND #PWR?
+U 1 1 56D99D00
+P 4300 3850
+F 0 "#PWR?" H 4300 3850 30  0001 C CNN
+F 1 "GND" H 4300 3780 30  0001 C CNN
+F 2 "" H 4300 3850 60  0001 C CNN
+F 3 "" H 4300 3850 60  0001 C CNN
+	1    4300 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56D99D06
+P 5300 3850
+F 0 "#PWR?" H 5300 3850 30  0001 C CNN
+F 1 "GND" H 5300 3780 30  0001 C CNN
+F 2 "" H 5300 3850 60  0001 C CNN
+F 3 "" H 5300 3850 60  0001 C CNN
+	1    5300 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3750 5300 3850
+Wire Wire Line
+	4300 3750 4300 3850
+$EndSCHEMATC

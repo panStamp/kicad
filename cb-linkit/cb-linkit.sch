@@ -53,7 +53,7 @@ encoding utf-8
 Sheet 1 3
 Title "Linkit carrier board"
 Date "2016-03-01"
-Rev "1.0"
+Rev "0.1"
 Comp "panStamp (www.panstamp.com)"
 Comment1 ""
 Comment2 ""

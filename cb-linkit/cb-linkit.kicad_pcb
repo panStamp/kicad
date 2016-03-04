@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 0.201603021449+6606~42~ubuntu14.04.1-product)
+(kicad_pcb (version 4) (host pcbnew 0.201603031449+6606~43~ubuntu14.04.1-product)
 
   (general
     (links 86)
@@ -16,7 +16,7 @@
   (title_block
     (title "Linkit carrier board")
     (date 2016-03-02)
-    (rev 1.0)
+    (rev 0.1)
     (company "panStamp (www.panstamp.com)")
   )
 
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.762)
+    (last_trace_width 0.1524)
     (user_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
@@ -85,7 +85,7 @@
     (aux_axis_origin 162.52952 122.1486)
     (visible_elements FFFFF7BF)
     (pcbplotparams
-      (layerselection 0x010e0_fffffff9)
+      (layerselection 0x00020_7ffffff8)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.150000)
@@ -31742,7 +31742,7 @@
   (gr_arc (start 186.61 21.96) (end 186.61 17.48) (angle 90) (layer Edge.Cuts) (width 0.381))
   (gr_arc (start 114.58 21.96) (end 110.09 21.96) (angle 90) (layer Edge.Cuts) (width 0.381))
   (gr_arc (start 114.58 88.96) (end 114.58 93.48) (angle 90) (layer Edge.Cuts) (width 0.381))
-  (gr_text "LIBREnet gateway\n1.0" (at 123.33 75.44) (layer F.SilkS) (tstamp 55011D29)
+  (gr_text "LIBREnet gateway\n0.1" (at 123.33 75.44) (layer F.SilkS) (tstamp 55011D29)
     (effects (font (size 1.778 1.524) (thickness 0.1778)))
   )
   (gr_text www.panstamp.com (at 177.24 27.7) (layer F.SilkS)
