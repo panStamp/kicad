@@ -1,0 +1,304 @@
+EESchema Schematic File Version 2
+LIBS:cb-bbb-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:atmega8
+LIBS:atmel89cxxxx
+LIBS:atmel-1
+LIBS:atmel-2005
+LIBS:avr
+LIBS:avr-1
+LIBS:avr-2
+LIBS:avr-3
+LIBS:avr-4
+LIBS:hopf
+LIBS:rfm-ash
+LIBS:mycomponents
+LIBS:mcp120-130
+LIBS:mcp3304
+LIBS:microchip_mcp2120
+LIBS:microchip-mcp125x-xxx
+LIBS:toshiba
+LIBS:cb-bbb-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "RF circuits"
+Date "15 Jul 2015"
+Rev "1.0"
+Comp "www.panstamp.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +3.3V #PWR011
+U 1 1 56486F0E
+P 4250 1650
+F 0 "#PWR011" H 4250 1610 30  0001 C CNN
+F 1 "+3.3V" H 4250 1760 30  0000 C CNN
+F 2 "" H 4250 1650 60  0001 C CNN
+F 3 "" H 4250 1650 60  0001 C CNN
+	1    4250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 56486F14
+P 3150 3550
+F 0 "#PWR012" H 3150 3550 30  0001 C CNN
+F 1 "GND" H 3150 3480 30  0001 C CNN
+F 2 "" H 3150 3550 60  0001 C CNN
+F 3 "" H 3150 3550 60  0001 C CNN
+	1    3150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1750 4250 1750
+Wire Wire Line
+	4250 1750 4250 1650
+Wire Wire Line
+	3250 3400 3250 3500
+Wire Wire Line
+	3150 3400 3150 3550
+Connection ~ 3150 3500
+Text GLabel 2000 2250 0    60   Input ~ 0
+UART1_RXD
+Text GLabel 2000 2350 0    60   Input ~ 0
+UART1_TXD
+Wire Wire Line
+	2150 2250 2000 2250
+Wire Wire Line
+	2150 2350 2000 2350
+Text GLabel 4300 1850 2    60   Input ~ 0
+GPIO20
+Text GLabel 4300 1950 2    60   Input ~ 0
+GPIO115
+Wire Wire Line
+	4300 1950 4150 1950
+Wire Wire Line
+	4300 1850 4150 1850
+$Comp
+L +3.3V #PWR013
+U 1 1 56509A98
+P 8450 1600
+F 0 "#PWR013" H 8450 1560 30  0001 C CNN
+F 1 "+3.3V" H 8450 1710 30  0000 C CNN
+F 2 "" H 8450 1600 60  0001 C CNN
+F 3 "" H 8450 1600 60  0001 C CNN
+	1    8450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 56509A9E
+P 7350 3500
+F 0 "#PWR014" H 7350 3500 30  0001 C CNN
+F 1 "GND" H 7350 3430 30  0001 C CNN
+F 2 "" H 7350 3500 60  0001 C CNN
+F 3 "" H 7350 3500 60  0001 C CNN
+	1    7350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1700 8450 1700
+Wire Wire Line
+	8450 1700 8450 1600
+Wire Wire Line
+	7450 3350 7450 3450
+Wire Wire Line
+	7350 3350 7350 3500
+Connection ~ 7350 3450
+Text GLabel 6200 2200 0    60   Input ~ 0
+UART2_RXD
+Text GLabel 6200 2300 0    60   Input ~ 0
+UART2_TXD
+Wire Wire Line
+	6350 2200 6200 2200
+Wire Wire Line
+	6350 2300 6200 2300
+Text GLabel 8500 1800 2    60   Input ~ 0
+GPIO60
+Text GLabel 8500 1900 2    60   Input ~ 0
+GPIO7
+Wire Wire Line
+	8500 1900 8350 1900
+Wire Wire Line
+	8500 1800 8350 1800
+$Comp
+L PANSTAMP_MINIBAT PS1
+U 1 1 571E3A87
+P 3150 2150
+F 0 "PS1" H 3150 3337 60  0000 C CNN
+F 1 "PANSTAMP_MINIBAT" H 3150 3231 60  0000 C CNN
+F 2 "mymods:minibat" H 3200 2550 60  0001 C CNN
+F 3 "" H 3200 2550 60  0000 C CNN
+	1    3150 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3500 3150 3500
+$Comp
+L PANSTAMP_MINIBAT PS3
+U 1 1 571E3BC8
+P 7350 2100
+F 0 "PS3" H 7350 3287 60  0000 C CNN
+F 1 "PANSTAMP_MINIBAT" H 7350 3181 60  0000 C CNN
+F 2 "mymods:minibat" H 7400 2500 60  0001 C CNN
+F 3 "" H 7400 2500 60  0000 C CNN
+	1    7350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3450 7350 3450
+$Comp
+L +3.3V #PWR015
+U 1 1 571E3DDB
+P 4300 4500
+F 0 "#PWR015" H 4300 4460 30  0001 C CNN
+F 1 "+3.3V" H 4300 4610 30  0000 C CNN
+F 2 "" H 4300 4500 60  0001 C CNN
+F 3 "" H 4300 4500 60  0001 C CNN
+	1    4300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 571E3DE1
+P 3200 6400
+F 0 "#PWR016" H 3200 6400 30  0001 C CNN
+F 1 "GND" H 3200 6330 30  0001 C CNN
+F 2 "" H 3200 6400 60  0001 C CNN
+F 3 "" H 3200 6400 60  0001 C CNN
+	1    3200 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4600 4300 4600
+Wire Wire Line
+	4300 4600 4300 4500
+Wire Wire Line
+	3300 6250 3300 6350
+Wire Wire Line
+	3200 6250 3200 6400
+Connection ~ 3200 6350
+Text GLabel 2050 5100 0    60   Input ~ 0
+UART4_RXD
+Text GLabel 2050 5200 0    60   Input ~ 0
+UART4_TXD
+Wire Wire Line
+	2200 5100 2050 5100
+Wire Wire Line
+	2200 5200 2050 5200
+Text GLabel 4350 4700 2    60   Input ~ 0
+GPIO49
+Text GLabel 4350 4800 2    60   Input ~ 0
+GPIO117
+Wire Wire Line
+	4350 4800 4200 4800
+Wire Wire Line
+	4350 4700 4200 4700
+$Comp
+L +3.3V #PWR017
+U 1 1 571E3DF4
+P 8500 4450
+F 0 "#PWR017" H 8500 4410 30  0001 C CNN
+F 1 "+3.3V" H 8500 4560 30  0000 C CNN
+F 2 "" H 8500 4450 60  0001 C CNN
+F 3 "" H 8500 4450 60  0001 C CNN
+	1    8500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 571E3DFA
+P 7400 6350
+F 0 "#PWR018" H 7400 6350 30  0001 C CNN
+F 1 "GND" H 7400 6280 30  0001 C CNN
+F 2 "" H 7400 6350 60  0001 C CNN
+F 3 "" H 7400 6350 60  0001 C CNN
+	1    7400 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4550 8500 4550
+Wire Wire Line
+	8500 4550 8500 4450
+Wire Wire Line
+	7500 6200 7500 6300
+Wire Wire Line
+	7400 6200 7400 6350
+Connection ~ 7400 6300
+Text GLabel 6250 5050 0    60   Input ~ 0
+UART5_RXD
+Text GLabel 6250 5150 0    60   Input ~ 0
+UART5_TXD
+Wire Wire Line
+	6400 5050 6250 5050
+Wire Wire Line
+	6400 5150 6250 5150
+Text GLabel 8550 4650 2    60   Input ~ 0
+GPIO8
+Text GLabel 8550 4750 2    60   Input ~ 0
+GPIO9
+Wire Wire Line
+	8550 4750 8400 4750
+Wire Wire Line
+	8550 4650 8400 4650
+$Comp
+L PANSTAMP_MINIBAT PS2
+U 1 1 571E3E0D
+P 3200 5000
+F 0 "PS2" H 3200 6187 60  0000 C CNN
+F 1 "PANSTAMP_MINIBAT" H 3200 6081 60  0000 C CNN
+F 2 "mymods:minibat" H 3250 5400 60  0001 C CNN
+F 3 "" H 3250 5400 60  0000 C CNN
+	1    3200 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6350 3200 6350
+$Comp
+L PANSTAMP_MINIBAT PS4
+U 1 1 571E3E14
+P 7400 4950
+F 0 "PS4" H 7400 6137 60  0000 C CNN
+F 1 "PANSTAMP_MINIBAT" H 7400 6031 60  0000 C CNN
+F 2 "mymods:minibat" H 7450 5350 60  0001 C CNN
+F 3 "" H 7450 5350 60  0000 C CNN
+	1    7400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 6300 7400 6300
+$EndSCHEMATC

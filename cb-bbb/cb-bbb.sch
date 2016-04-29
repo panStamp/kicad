@@ -1,0 +1,546 @@
+EESchema Schematic File Version 2
+LIBS:cb-bbb-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:atmega8
+LIBS:atmel89cxxxx
+LIBS:atmel-1
+LIBS:atmel-2005
+LIBS:avr
+LIBS:avr-1
+LIBS:avr-2
+LIBS:avr-3
+LIBS:avr-4
+LIBS:hopf
+LIBS:rfm-ash
+LIBS:mycomponents
+LIBS:mcp120-130
+LIBS:mcp3304
+LIBS:microchip_mcp2120
+LIBS:microchip-mcp125x-xxx
+LIBS:toshiba
+LIBS:cb-bbb-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "Carrier board for BeagleBone Black"
+Date "2016-04-28"
+Rev "1.0"
+Comp "www.panstamp.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BEAGLEBONEBLACK U1
+U 1 1 564868DE
+P 2150 2000
+F 0 "U1" H 2000 3250 60  0000 C CNN
+F 1 "BEAGLEBONEBLACK" H 2200 700 60  0000 C CNN
+F 2 "mymods:BEAGLEBONEBLACK" H 1950 750 60  0001 C CNN
+F 3 "" H 1950 750 60  0000 C CNN
+	1    2150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L BEAGLEBONEBLACK U1
+U 2 1 56486AB6
+P 2150 4800
+F 0 "U1" H 2000 6050 60  0000 C CNN
+F 1 "BEAGLEBONEBLACK" H 2200 3500 60  0000 C CNN
+F 2 "mymods:BEAGLEBONEBLACK" H 1950 3550 60  0001 C CNN
+F 3 "" H 1950 3550 60  0000 C CNN
+	2    2150 4800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 7050 4450 1200 750 
+U 56486D49
+F0 "RF" 60
+F1 "rf.sch" 60
+$EndSheet
+$Sheet
+S 8700 4500 1000 750 
+U 56487838
+F0 "PSU" 60
+F1 "psu.sch" 60
+$EndSheet
+$Comp
+L BEAGLEBONEBLACK U1
+U 3 1 564880F2
+P 4050 2000
+F 0 "U1" H 3900 3250 60  0000 C CNN
+F 1 "BEAGLEBONEBLACK" H 4100 700 60  0000 C CNN
+F 2 "mymods:BEAGLEBONEBLACK" H 3850 750 60  0001 C CNN
+F 3 "" H 3850 750 60  0000 C CNN
+	3    4050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L BEAGLEBONEBLACK U1
+U 4 1 564881CF
+P 4050 4800
+F 0 "U1" H 3900 6050 60  0000 C CNN
+F 1 "BEAGLEBONEBLACK" H 4100 3500 60  0000 C CNN
+F 2 "mymods:BEAGLEBONEBLACK" H 3850 3550 60  0001 C CNN
+F 3 "" H 3850 3550 60  0000 C CNN
+	4    4050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 564E41D0
+P 1500 950
+F 0 "#PWR01" H 1500 700 50  0001 C CNN
+F 1 "GND" H 1500 800 50  0000 C CNN
+F 2 "" H 1500 950 60  0000 C CNN
+F 3 "" H 1500 950 60  0000 C CNN
+	1    1500 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 950  1500 950 
+$Comp
+L GND #PWR02
+U 1 1 564E41F0
+P 3400 950
+F 0 "#PWR02" H 3400 700 50  0001 C CNN
+F 1 "GND" H 3400 800 50  0000 C CNN
+F 2 "" H 3400 950 60  0000 C CNN
+F 3 "" H 3400 950 60  0000 C CNN
+	1    3400 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 950  3400 950 
+NoConn ~ 1600 1050
+NoConn ~ 1600 1150
+NoConn ~ 1600 3850
+NoConn ~ 1600 3950
+NoConn ~ 1600 4650
+NoConn ~ 1600 4750
+NoConn ~ 1600 4850
+NoConn ~ 1600 1950
+NoConn ~ 1600 2050
+NoConn ~ 1600 2150
+Text GLabel 1500 1250 0    60   Input ~ 0
+GPIO66
+Text GLabel 1500 1350 0    60   Input ~ 0
+GPIO69
+Text GLabel 1500 1450 0    60   Input ~ 0
+GPIO45
+Wire Wire Line
+	1500 1250 1600 1250
+Wire Wire Line
+	1600 1350 1500 1350
+Wire Wire Line
+	1500 1450 1600 1450
+Text GLabel 1500 1650 0    60   Input ~ 0
+GPIO47
+Text GLabel 1500 1750 0    60   Input ~ 0
+GPIO27
+Wire Wire Line
+	1500 1650 1600 1650
+Wire Wire Line
+	1600 1750 1500 1750
+Text GLabel 1500 4050 0    60   Input ~ 0
+GPIO67
+Text GLabel 1500 4150 0    60   Input ~ 0
+GPIO68
+Text GLabel 1500 4250 0    60   Input ~ 0
+GPIO44
+Text GLabel 1500 4350 0    60   Input ~ 0
+GPIO26
+Text GLabel 1500 4450 0    60   Input ~ 0
+GPIO46
+Text GLabel 1500 4550 0    60   Input ~ 0
+GPIO65
+Wire Wire Line
+	1500 4050 1600 4050
+Wire Wire Line
+	1600 4150 1500 4150
+Wire Wire Line
+	1500 4250 1600 4250
+Wire Wire Line
+	1600 4350 1500 4350
+Wire Wire Line
+	1500 4450 1600 4450
+Wire Wire Line
+	1600 4550 1500 4550
+$Comp
+L GND #PWR03
+U 1 1 564E4B4F
+P 1500 3750
+F 0 "#PWR03" H 1500 3500 50  0001 C CNN
+F 1 "GND" H 1500 3600 50  0000 C CNN
+F 2 "" H 1500 3750 60  0000 C CNN
+F 3 "" H 1500 3750 60  0000 C CNN
+	1    1500 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 3750 1500 3750
+Text GLabel 1500 1550 0    60   Input ~ 0
+EHRPWM2B
+Wire Wire Line
+	1600 1550 1500 1550
+Text GLabel 1500 1850 0    60   Input ~ 0
+EHRPWM2A
+Wire Wire Line
+	1600 1850 1500 1850
+Text GLabel 1500 2450 0    60   Input ~ 0
+GPIO10
+Text GLabel 1500 2550 0    60   Input ~ 0
+GPIO9
+Text GLabel 1500 2650 0    60   Input ~ 0
+GPIO8
+Text GLabel 1500 2750 0    60   Input ~ 0
+UART5_TXD
+Wire Wire Line
+	1600 2450 1500 2450
+Wire Wire Line
+	1600 2550 1500 2550
+Wire Wire Line
+	1600 2650 1500 2650
+Wire Wire Line
+	1600 2750 1500 2750
+Text GLabel 1500 2850 0    60   Input ~ 0
+GPIO76
+Text GLabel 1500 2950 0    60   Input ~ 0
+GPIO74
+Text GLabel 1500 3050 0    60   Input ~ 0
+GPIO72
+Text GLabel 1500 3150 0    60   Input ~ 0
+GPIO70
+Wire Wire Line
+	1500 2850 1600 2850
+Wire Wire Line
+	1600 2950 1500 2950
+Wire Wire Line
+	1500 3050 1600 3050
+Wire Wire Line
+	1600 3150 1500 3150
+Text GLabel 1500 2250 0    60   Input ~ 0
+GPIO86
+Text GLabel 1500 2350 0    60   Input ~ 0
+GPIO87
+Wire Wire Line
+	1500 2250 1600 2250
+Wire Wire Line
+	1600 2350 1500 2350
+Text GLabel 1500 4950 0    60   Input ~ 0
+GPIO61
+Wire Wire Line
+	1600 4950 1500 4950
+Text GLabel 1500 5050 0    60   Input ~ 0
+GPIO88
+Text GLabel 1500 5150 0    60   Input ~ 0
+GPIO89
+Text GLabel 1500 5250 0    60   Input ~ 0
+GPIO11
+Wire Wire Line
+	1500 5050 1600 5050
+Wire Wire Line
+	1600 5150 1500 5150
+Wire Wire Line
+	1500 5250 1600 5250
+Text GLabel 3350 4350 0    60   Input ~ 0
+EHRPWM1A
+Text GLabel 3350 4450 0    60   Input ~ 0
+EHRPWM1B
+Wire Wire Line
+	1600 5350 1500 5350
+Wire Wire Line
+	1500 5450 1600 5450
+Text GLabel 1500 5550 0    60   Input ~ 0
+UART5_RXD
+Wire Wire Line
+	1600 5550 1500 5550
+Text GLabel 1500 5650 0    60   Input ~ 0
+GPIO77
+Text GLabel 1500 5750 0    60   Input ~ 0
+GPIO75
+Text GLabel 1500 5850 0    60   Input ~ 0
+GPIO73
+Wire Wire Line
+	1500 5650 1600 5650
+Wire Wire Line
+	1600 5750 1500 5750
+Wire Wire Line
+	1500 5850 1600 5850
+Text GLabel 1500 5950 0    60   Input ~ 0
+GPIO71
+Wire Wire Line
+	1600 5950 1500 5950
+$Comp
+L +5V #PWR04
+U 1 1 564E5FCF
+P 3400 1150
+F 0 "#PWR04" H 3400 1000 50  0001 C CNN
+F 1 "+5V" H 3400 1290 50  0000 C CNN
+F 2 "" H 3400 1150 60  0000 C CNN
+F 3 "" H 3400 1150 60  0000 C CNN
+	1    3400 1150
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3500 1250
+Text GLabel 3200 1050 0    60   Input ~ 0
+BBB_3V3
+Wire Wire Line
+	3500 1050 3200 1050
+Wire Wire Line
+	3500 1150 3400 1150
+Text GLabel 3400 1350 0    60   Input ~ 0
+PWR_BUT
+Wire Wire Line
+	3500 1350 3400 1350
+Text GLabel 3400 1450 0    60   Input ~ 0
+UART4_RXD
+Text GLabel 3400 1550 0    60   Input ~ 0
+UART4_TXD
+Wire Wire Line
+	3500 1450 3400 1450
+Wire Wire Line
+	3400 1550 3500 1550
+Text GLabel 3400 1650 0    60   Input ~ 0
+GPIO48
+Wire Wire Line
+	3500 1650 3400 1650
+Text GLabel 3350 5050 0    60   Input ~ 0
+SPI1_CS0
+Text GLabel 3350 5150 0    60   Input ~ 0
+SPI1_D1
+Wire Wire Line
+	3500 5050 3350 5050
+Wire Wire Line
+	3350 5150 3500 5150
+Text GLabel 3400 2350 0    60   Input ~ 0
+SPI1_D0
+Text GLabel 3400 2450 0    60   Input ~ 0
+SPI1_SCK
+Wire Wire Line
+	3400 2350 3500 2350
+Wire Wire Line
+	3500 2450 3400 2450
+Text GLabel 3400 2550 0    60   Input ~ 0
+AIN4
+Text GLabel 3400 2650 0    60   Input ~ 0
+AIN6
+Text GLabel 3400 2750 0    60   Input ~ 0
+AIN2
+Text GLabel 3400 2850 0    60   Input ~ 0
+AIN0
+Wire Wire Line
+	3400 2550 3500 2550
+Wire Wire Line
+	3500 2650 3400 2650
+Wire Wire Line
+	3400 2750 3500 2750
+Wire Wire Line
+	3500 2850 3400 2850
+$Comp
+L GND #PWR05
+U 1 1 564E6BC4
+P 3400 3200
+F 0 "#PWR05" H 3400 2950 50  0001 C CNN
+F 1 "GND" H 3400 3050 50  0000 C CNN
+F 2 "" H 3400 3200 60  0000 C CNN
+F 3 "" H 3400 3200 60  0000 C CNN
+	1    3400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3050 3400 3050
+Wire Wire Line
+	3400 3050 3400 3200
+Wire Wire Line
+	3500 3150 3400 3150
+Connection ~ 3400 3150
+Text GLabel 3400 1750 0    60   Input ~ 0
+I2C1_SCL
+Wire Wire Line
+	3500 1750 3400 1750
+Text GLabel 3400 1950 0    60   Input ~ 0
+UART2_TXD
+Wire Wire Line
+	3500 1950 3400 1950
+Text GLabel 3350 4950 0    60   Input ~ 0
+UART1_RXD
+Text GLabel 3350 4850 0    60   Input ~ 0
+UART1_TXD
+Text GLabel 3350 4750 0    60   Input ~ 0
+UART2_RXD
+Text GLabel 3350 4550 0    60   Input ~ 0
+I2C1_SDA
+Text GLabel 3350 4650 0    60   Input ~ 0
+I2C2_SDA
+Wire Wire Line
+	3350 4550 3500 4550
+Wire Wire Line
+	3500 4650 3350 4650
+Wire Wire Line
+	3350 4750 3500 4750
+Wire Wire Line
+	3500 4850 3350 4850
+Wire Wire Line
+	3350 4950 3500 4950
+Text GLabel 3400 1850 0    60   Input ~ 0
+I2C2_SCL
+Wire Wire Line
+	3500 1850 3400 1850
+Wire Wire Line
+	3500 4350 3350 4350
+Wire Wire Line
+	3500 4450 3350 4450
+$Comp
+L GND #PWR06
+U 1 1 564E781C
+P 3400 3750
+F 0 "#PWR06" H 3400 3500 50  0001 C CNN
+F 1 "GND" H 3400 3600 50  0000 C CNN
+F 2 "" H 3400 3750 60  0000 C CNN
+F 3 "" H 3400 3750 60  0000 C CNN
+	1    3400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 564E7822
+P 3400 3950
+F 0 "#PWR07" H 3400 3800 50  0001 C CNN
+F 1 "+5V" H 3400 4090 50  0000 C CNN
+F 2 "" H 3400 3950 60  0000 C CNN
+F 3 "" H 3400 3950 60  0000 C CNN
+	1    3400 3950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3200 3850 0    60   Input ~ 0
+BBB_3V3
+Wire Wire Line
+	3500 3850 3200 3850
+Wire Wire Line
+	3500 3750 3400 3750
+Wire Wire Line
+	3400 3950 3500 3950
+NoConn ~ 3500 4050
+Text GLabel 3350 4150 0    60   Input ~ 0
+SYS_RESETn
+Wire Wire Line
+	3500 4150 3350 4150
+Text GLabel 3350 4250 0    60   Input ~ 0
+GPIO60
+Wire Wire Line
+	3350 4250 3500 4250
+Text GLabel 3350 5450 0    60   Input ~ 0
+AIN5
+Text GLabel 3350 5550 0    60   Input ~ 0
+AIN3
+Text GLabel 3350 5650 0    60   Input ~ 0
+AIN1
+Wire Wire Line
+	3350 5450 3500 5450
+Wire Wire Line
+	3500 5550 3350 5550
+Wire Wire Line
+	3500 5650 3350 5650
+Text GLabel 3350 5750 0    60   Input ~ 0
+GPIO7
+Wire Wire Line
+	3500 5750 3350 5750
+$Comp
+L GND #PWR08
+U 1 1 564E832A
+P 3400 6000
+F 0 "#PWR08" H 3400 5750 50  0001 C CNN
+F 1 "GND" H 3400 5850 50  0000 C CNN
+F 2 "" H 3400 6000 60  0000 C CNN
+F 3 "" H 3400 6000 60  0000 C CNN
+	1    3400 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5850 3400 5850
+Wire Wire Line
+	3400 5850 3400 6000
+Wire Wire Line
+	3500 5950 3400 5950
+Connection ~ 3400 5950
+$Comp
+L +1V8 #PWR09
+U 1 1 564E8580
+P 2900 5250
+F 0 "#PWR09" H 2900 5100 50  0001 C CNN
+F 1 "+1V8" H 2900 5390 50  0000 C CNN
+F 2 "" H 2900 5250 60  0000 C CNN
+F 3 "" H 2900 5250 60  0000 C CNN
+	1    2900 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 5250 3500 5250
+$Comp
+L GNDA #PWR010
+U 1 1 564E85F0
+P 2950 5450
+F 0 "#PWR010" H 2950 5200 50  0001 C CNN
+F 1 "GNDA" H 2950 5300 50  0000 C CNN
+F 2 "" H 2950 5450 60  0000 C CNN
+F 3 "" H 2950 5450 60  0000 C CNN
+	1    2950 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5350 2950 5350
+Wire Wire Line
+	2950 5350 2950 5450
+Text GLabel 1500 5350 0    60   Input ~ 0
+GPIO81
+Text GLabel 1500 5450 0    60   Input ~ 0
+GPIO80
+Text GLabel 3400 2950 0    60   Input ~ 0
+GPIO20
+Wire Wire Line
+	3400 2950 3500 2950
+Text GLabel 3400 2050 0    60   Input ~ 0
+GPIO49
+Text GLabel 3400 2150 0    60   Input ~ 0
+GPIO117
+Text GLabel 3400 2250 0    60   Input ~ 0
+GPIO115
+Wire Wire Line
+	3400 2050 3500 2050
+Wire Wire Line
+	3500 2150 3400 2150
+Wire Wire Line
+	3400 2250 3500 2250
+$EndSCHEMATC

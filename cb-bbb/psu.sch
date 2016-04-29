@@ -1,0 +1,294 @@
+EESchema Schematic File Version 2
+LIBS:cb-bbb-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:atmega8
+LIBS:atmel89cxxxx
+LIBS:atmel-1
+LIBS:atmel-2005
+LIBS:avr
+LIBS:avr-1
+LIBS:avr-2
+LIBS:avr-3
+LIBS:avr-4
+LIBS:hopf
+LIBS:rfm-ash
+LIBS:mycomponents
+LIBS:mcp120-130
+LIBS:mcp3304
+LIBS:microchip_mcp2120
+LIBS:microchip-mcp125x-xxx
+LIBS:toshiba
+LIBS:cb-bbb-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "PSU"
+Date "15 Jul 2015"
+Rev "1.0"
+Comp "www.panstamp.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L D_Schottky D1
+U 1 1 5650C7D1
+P 4550 3450
+F 0 "D1" H 4550 3550 50  0000 C CNN
+F 1 "D_Schottky" H 4550 3350 50  0000 C CNN
+F 2 "mysmd:SMA" H 4550 3450 60  0001 C CNN
+F 3 "" H 4550 3450 60  0000 C CNN
+	1    4550 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 5650F645
+P 4200 3350
+F 0 "#PWR019" H 4200 3200 50  0001 C CNN
+F 1 "+5V" H 4200 3490 50  0000 C CNN
+F 2 "" H 4200 3350 60  0000 C CNN
+F 3 "" H 4200 3350 60  0000 C CNN
+	1    4200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3450 5400 3450
+Wire Wire Line
+	4200 3450 4200 3350
+$Comp
+L +3.3V #PWR020
+U 1 1 5650F95F
+P 7000 3350
+F 0 "#PWR020" H 7000 3200 50  0001 C CNN
+F 1 "+3.3V" H 7000 3490 50  0000 C CNN
+F 2 "" H 7000 3350 60  0000 C CNN
+F 3 "" H 7000 3350 60  0000 C CNN
+	1    7000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3450 7000 3450
+$Comp
+L GND #PWR021
+U 1 1 5650FFD6
+P 7000 3850
+F 0 "#PWR021" H 7000 3850 30  0001 C CNN
+F 1 "GND" H 7000 3780 30  0001 C CNN
+F 2 "" H 7000 3850 60  0001 C CNN
+F 3 "" H 7000 3850 60  0001 C CNN
+	1    7000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5650FFDC
+P 7000 3650
+F 0 "C5" H 7050 3750 50  0000 L CNN
+F 1 "100n" H 7050 3550 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 7000 3650 60  0001 C CNN
+F 3 "" H 7000 3650 60  0001 C CNN
+	1    7000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 5650FFE2
+P 6700 3850
+F 0 "#PWR022" H 6700 3850 30  0001 C CNN
+F 1 "GND" H 6700 3780 30  0001 C CNN
+F 2 "" H 6700 3850 60  0001 C CNN
+F 3 "" H 6700 3850 60  0001 C CNN
+	1    6700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5650FFE8
+P 6700 3650
+F 0 "C4" H 6750 3750 50  0000 L CNN
+F 1 "1u" H 6750 3550 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 6700 3650 60  0001 C CNN
+F 3 "" H 6700 3650 60  0001 C CNN
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 565100FA
+P 6400 3650
+F 0 "C3" H 6450 3750 50  0000 L CNN
+F 1 "10u" H 6450 3550 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 6400 3650 60  0001 C CNN
+F 3 "" H 6400 3650 60  0001 C CNN
+	1    6400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3500 6400 3450
+Connection ~ 6400 3450
+Wire Wire Line
+	7000 3350 7000 3500
+Connection ~ 7000 3450
+Wire Wire Line
+	6700 3500 6700 3450
+Connection ~ 6700 3450
+$Comp
+L GND #PWR023
+U 1 1 5651030B
+P 6400 3850
+F 0 "#PWR023" H 6400 3850 30  0001 C CNN
+F 1 "GND" H 6400 3780 30  0001 C CNN
+F 2 "" H 6400 3850 60  0001 C CNN
+F 3 "" H 6400 3850 60  0001 C CNN
+	1    6400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3850 6400 3800
+Wire Wire Line
+	6700 3850 6700 3800
+Wire Wire Line
+	7000 3850 7000 3800
+$Comp
+L C C1
+U 1 1 56510478
+P 4900 3650
+F 0 "C1" H 4950 3750 50  0000 L CNN
+F 1 "10u" H 4950 3550 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 4900 3650 60  0001 C CNN
+F 3 "" H 4900 3650 60  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 5651047E
+P 4900 3850
+F 0 "#PWR024" H 4900 3850 30  0001 C CNN
+F 1 "GND" H 4900 3780 30  0001 C CNN
+F 2 "" H 4900 3850 60  0001 C CNN
+F 3 "" H 4900 3850 60  0001 C CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3850 4900 3800
+Wire Wire Line
+	4900 3500 4900 3450
+Connection ~ 4900 3450
+$Comp
+L TC1265 U2
+U 1 1 56524ADC
+P 5850 3500
+F 0 "U2" H 5600 3700 40  0000 C CNN
+F 1 "TC1265" H 5850 3700 40  0000 C CNN
+F 2 "libcms:SO8E" H 5850 3600 35  0001 C CIN
+F 3 "" H 5850 3500 60  0000 C CNN
+	1    5850 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 4100 0    60   Input ~ 0
+BBB_3V3
+$Comp
+L R R1
+U 1 1 565252C0
+P 5400 4300
+F 0 "R1" V 5480 4300 50  0000 C CNN
+F 1 "10k" V 5400 4300 50  0000 C CNN
+F 2 "mysmd:SM0603S" V 5330 4300 30  0001 C CNN
+F 3 "" H 5400 4300 30  0000 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3600 5400 4150
+Wire Wire Line
+	5150 4100 5400 4100
+Connection ~ 5400 4100
+$Comp
+L GND #PWR025
+U 1 1 5652551E
+P 5400 4500
+F 0 "#PWR025" H 5400 4500 30  0001 C CNN
+F 1 "GND" H 5400 4430 30  0001 C CNN
+F 2 "" H 5400 4500 60  0001 C CNN
+F 3 "" H 5400 4500 60  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4450 5400 4500
+$Comp
+L GND #PWR026
+U 1 1 5652567E
+P 6000 3850
+F 0 "#PWR026" H 6000 3850 30  0001 C CNN
+F 1 "GND" H 6000 3780 30  0001 C CNN
+F 2 "" H 6000 3850 60  0001 C CNN
+F 3 "" H 6000 3850 60  0001 C CNN
+	1    6000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3800 6000 3850
+$Comp
+L C C2
+U 1 1 56525BFE
+P 5850 4150
+F 0 "C2" H 5900 4250 50  0000 L CNN
+F 1 "470p" H 5900 4050 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 5850 4150 60  0001 C CNN
+F 3 "" H 5850 4150 60  0001 C CNN
+	1    5850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4000 5850 3800
+$Comp
+L GND #PWR027
+U 1 1 56525DAA
+P 5850 4350
+F 0 "#PWR027" H 5850 4350 30  0001 C CNN
+F 1 "GND" H 5850 4280 30  0001 C CNN
+F 2 "" H 5850 4350 60  0001 C CNN
+F 3 "" H 5850 4350 60  0001 C CNN
+	1    5850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4350 5850 4300
+Wire Wire Line
+	4400 3450 4200 3450
+$EndSCHEMATC
