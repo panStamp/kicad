@@ -48,8 +48,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Minibat sensor board for panStamp"
-Date "17 Mar 2015"
-Rev "1.0"
+Date "2016-06-07"
+Rev "2.0"
 Comp "www.panstamp.com"
 Comment1 ""
 Comment2 ""
