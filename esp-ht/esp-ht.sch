@@ -623,7 +623,7 @@ F 1 "D_Schottky_x2_ACom_KKA" H 2800 6550 50  0001 C CNN
 F 2 "mysmd:SOT23" H 2800 6450 60  0001 C CNN
 F 3 "" H 2800 6450 60  0000 C CNN
 	1    2800 6450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L GND #PWR025

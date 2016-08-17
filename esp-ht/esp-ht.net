@@ -1,11 +1,11 @@
 (export (version D)
   (design
     (source /home/daniel/development/panstamp_git/kicad/esp-ht/esp-ht.sch)
-    (date "Tue 22 Dec 2015 09:02:42 AM CET")
-    (tool "Eeschema 0.201512211246+6391~39~ubuntu14.04.1-stable")
+    (date "Wed 18 May 2016 12:18:00 PM CEST")
+    (tool "Eeschema 4.1.0-alpha+201605091531+6781~44~ubuntu14.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
-        (title "panStamp Humidity and Temperature board for ESP8266")
+        (title "panStamp ambient sensor board for ESP8266")
         (company "panStamp (www.panstamp.com)")
         (rev 1.0)
         (date 2015-11-28)
@@ -30,7 +30,7 @@
     (comp (ref U1)
       (value ESP-12E)
       (footprint ESP8266:ESP-12E)
-      (libsource (lib mycomponents) (part ESP-12E))
+      (libsource (lib ESP8266) (part ESP-12E))
       (sheetpath (names /) (tstamps /))
       (tstamp 561CDAC0))
     (comp (ref U3)
@@ -173,9 +173,9 @@
       (tstamp 56788EBF)))
   (libparts
     (libpart (lib mycomponents) (part BMP180)
-      (description "Bosch I2C Pressure + Temperature sensor")
+      (description "BMP085 I2C Pressure sensor")
       (footprints
-        (fp BMP180))
+        (fp BMP085))
       (fields
         (field (name Reference) U)
         (field (name Value) BMP180))
@@ -200,7 +200,7 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
     (libpart (lib conn) (part CONN_01X02)
-      (description "Connector 01x02")
+      (description "Connector, single row, 01x02")
       (footprints
         (fp Pin_Header_Straight_1X02)
         (fp Pin_Header_Angled_1X02)
@@ -213,7 +213,7 @@
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name P2) (type passive))))
     (libpart (lib conn) (part CONN_01X07)
-      (description "Connector 01x07")
+      (description "Connector, single row, 01x07")
       (footprints
         (fp Pin_Header_Straight_1X07)
         (fp Pin_Header_Angled_1X07)
@@ -239,7 +239,9 @@
         (pin (num 1) (name K) (type passive))
         (pin (num 2) (name K) (type passive))
         (pin (num 3) (name A) (type passive))))
-    (libpart (lib mycomponents) (part ESP-12E)
+    (libpart (lib ESP8266) (part ESP-12E)
+      (description "ESP8622 ESP-12E module, 22 pins, 2mm, PCB antenna")
+      (docs http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/)
       (footprints
         (fp ESP-12E))
       (fields
@@ -329,12 +331,14 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical mycomponents)
-      (uri /usr/share/kicad/library/mycomponents.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical mycomponents)
+      (uri /usr/share/kicad/library/mycomponents.lib))
+    (library (logical ESP8266)
+      (uri /home/daniel/development/kicad/modules/kicad-ESP8266-master/ESP8266.lib)))
   (nets
     (net (code 1) (name /GPIO0)
       (node (ref R6) (pin 2))
