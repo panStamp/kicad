@@ -29,18 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:atmega8
-LIBS:atmel89cxxxx
-LIBS:atmel-1
-LIBS:atmel-2005
-LIBS:avr
-LIBS:avr-1
-LIBS:avr-2
-LIBS:avr-3
-LIBS:avr-4
-LIBS:hopf
-LIBS:rfm-ash
-LIBS:mycomponents
 LIBS:cb-ld-cache
 EELAYER 25 0
 EELAYER END
@@ -49,7 +37,7 @@ encoding utf-8
 Sheet 1 1
 Title "cb-ld2 for 433 MHz applications"
 Date "2016-05-06"
-Rev "0.2"
+Rev "1.0"
 Comp "panStamp"
 Comment1 ""
 Comment2 ""
@@ -415,8 +403,8 @@ $Comp
 L C C5
 U 1 1 56D9BAD5
 P 8600 6250
-F 0 "C5" H 8650 6350 50  0000 L CNN
-F 1 "2.4p" H 8650 6150 50  0000 L CNN
+F 0 "C5" H 8450 6350 50  0000 L CNN
+F 1 "2.4p" H 8400 6150 50  0000 L CNN
 F 2 "mysmd:SM0603S" H 8600 6250 60  0001 C CNN
 F 3 "" H 8600 6250 60  0001 C CNN
 	1    8600 6250
@@ -713,7 +701,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 4950 8350 4950
 Wire Wire Line
-	8350 4950 8350 6250
+	8350 4950 8350 6450
 Wire Wire Line
 	8150 4750 8350 4750
 Wire Wire Line
@@ -819,4 +807,49 @@ $EndComp
 Wire Wire Line
 	10450 3850 10450 3900
 Connection ~ 10450 3900
+$Comp
+L C C4
+U 1 1 57C3FDC5
+P 8350 6600
+F 0 "C4" H 8400 6700 50  0000 L CNN
+F 1 "3p" H 8400 6500 50  0000 L CNN
+F 2 "mysmd:SM0603S" H 8350 6600 60  0001 C CNN
+F 3 "" H 8350 6600 60  0001 C CNN
+	1    8350 6600
+	-1   0    0    1   
+$EndComp
+Connection ~ 8350 6250
+$Comp
+L GND #PWR017
+U 1 1 57C3FF57
+P 8350 6850
+F 0 "#PWR017" H 8350 6850 30  0001 C CNN
+F 1 "GND" H 8350 6780 30  0001 C CNN
+F 2 "" H 8350 6850 60  0001 C CNN
+F 3 "" H 8350 6850 60  0001 C CNN
+	1    8350 6850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 6850 8350 6750
+Text Notes 7550 6000 0    60   ~ 0
+1.5p (900MHz)
+Wire Notes Line
+	8150 6350 8150 7050
+Wire Notes Line
+	8250 5950 8600 5950
+Wire Notes Line
+	8600 5950 8600 6150
+Wire Notes Line
+	8150 6350 8550 6350
+Wire Notes Line
+	8550 6350 8550 7050
+Wire Notes Line
+	8550 7050 8150 7050
+Text Notes 8200 7150 0    60   ~ 0
+900MHz
+Text Notes 9050 6850 1    60   ~ 0
+0 (900MHz)
+Text Notes 9300 5650 0    60   ~ 0
+10n (900MHz)
 $EndSCHEMATC
