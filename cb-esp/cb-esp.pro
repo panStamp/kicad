@@ -1,4 +1,4 @@
-update=Fri 05 Feb 2016 09:20:14 AM CET
+update=lun 29 ago 2016 13:42:30 CEST
 last_client=kicad
 [cvpcb]
 version=1
@@ -80,3 +80,4 @@ LibName28=cypress
 LibName29=siliconi
 LibName30=contrib
 LibName31=valves
+LibName32=/home/daniel/development/panstamp_git/kicad/panstamp
