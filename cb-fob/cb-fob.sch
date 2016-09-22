@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:cb-fob-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:mycomponents
 LIBS:cb-fob-cache
 EELAYER 25 0
 EELAYER END
@@ -38,7 +36,7 @@ encoding utf-8
 Sheet 1 1
 Title "panStamp keyfob board"
 Date "2016-05-06"
-Rev "0.1"
+Rev "0.2"
 Comp "www.panstamp.com"
 Comment1 ""
 Comment2 ""
