@@ -1,5 +1,5 @@
-update=Wed 16 Dec 2015 12:33:31 PM CET
-last_client=kicad
+update=vie 28 oct 2016 12:05:12 CEST
+last_client=eeschema
 [general]
 version=1
 [cvpcb]
@@ -75,3 +75,4 @@ LibName41=avr-4
 LibName42=hopf
 LibName43=rfm-ash
 LibName44=mycomponents
+LibName45=/home/daniel/development/panstamp_git/kicad/panstamp
