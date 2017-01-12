@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "panStamp wireless module - CM3 version"
-Date "2016-11-22"
+Date "2017-01-12"
 Rev "0.1"
 Comp "panStamp S.L.U."
 Comment1 ""
@@ -219,10 +219,6 @@ Text Label 7950 3100 0    60   ~ 0
 A7
 Text Label 7950 5150 0    60   ~ 0
 DIO7
-Text Label 7950 2900 0    60   ~ 0
-DIO12
-Text Label 7950 3000 0    60   ~ 0
-DIO13
 Text Label 7950 5850 0    60   ~ 0
 SCK
 Text Label 7950 5750 0    60   ~ 0
@@ -690,10 +686,6 @@ Wire Wire Line
 Wire Wire Line
 	8400 3200 7950 3200
 Wire Wire Line
-	8400 2900 7950 2900
-Wire Wire Line
-	8400 3000 7950 3000
-Wire Wire Line
 	1000 4750 1350 4750
 Wire Wire Line
 	4300 3200 5000 3200
@@ -941,8 +933,6 @@ Wire Wire Line
 	8400 4300 7750 4300
 Wire Wire Line
 	2700 3500 2300 3500
-Text Label 7750 4200 0    60   ~ 0
-DIO14
 Wire Wire Line
 	2700 3300 2300 3300
 Wire Wire Line
@@ -978,11 +968,32 @@ F 3 "" H 2150 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 4500 7750 4500
-Text Label 7750 4600 0    60   ~ 0
-JTAG_TCKC
+	7600 4500 8400 4500
 Wire Wire Line
 	7600 4400 7600 4200
-Text Label 7750 4500 0    60   ~ 0
+Text Label 7750 4600 0    60   ~ 0
+JTAG_TCKC
+Text Label 7750 4200 0    60   ~ 0
 JTAG_TMSC
+$Comp
+L GND #PWR021
+U 1 1 58767217
+P 7600 4550
+F 0 "#PWR021" H 7600 4550 30  0001 C CNN
+F 1 "GND" H 7600 4480 30  0001 C CNN
+F 2 "" H 7600 4550 60  0001 C CNN
+F 3 "" H 7600 4550 60  0001 C CNN
+	1    7600 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4500 7600 4550
+Wire Wire Line
+	8400 2900 7950 2900
+Wire Wire Line
+	7950 3000 8400 3000
+Text Label 7950 2900 0    60   ~ 0
+DIO17
+Text Label 7950 3000 0    60   ~ 0
+DIO16
 $EndSCHEMATC
