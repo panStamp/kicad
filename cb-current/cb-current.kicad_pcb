@@ -1,22 +1,22 @@
-(kicad_pcb (version 4) (host pcbnew 0.201512201246+6385~39~ubuntu14.04.1-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.2+dfsg1-stable)
 
   (general
-    (links 82)
-    (no_connects 0)
+    (links 85)
+    (no_connects 3)
     (area 94.302579 124.795279 149.674581 165.196521)
     (thickness 1.6002)
     (drawings 51)
     (tracks 655)
     (zones 0)
     (modules 35)
-    (nets 33)
+    (nets 36)
   )
 
   (page A4)
   (title_block
     (title "Current meter board for panStamp 2")
-    (date "15 Apr 2015")
-    (rev 1.0)
+    (date 2017-03-14)
+    (rev 1.1)
     (company panStamp)
   )
 
@@ -41,7 +41,7 @@
   )
 
   (setup
-    (last_trace_width 0.762)
+    (last_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
@@ -218,6 +218,9 @@
   (net 30 /A1)
   (net 31 /A4)
   (net 32 /A0)
+  (net 33 "Net-(P1-Pad2)")
+  (net 34 "Net-(P2-Pad2)")
+  (net 35 "Net-(P3-Pad2)")
 
   (net_class Default "This is the default net class."
     (clearance 0.1524)
@@ -257,6 +260,9 @@
     (add_net "Net-(C1-Pad1)")
     (add_net "Net-(C2-Pad1)")
     (add_net "Net-(C3-Pad1)")
+    (add_net "Net-(P1-Pad2)")
+    (add_net "Net-(P2-Pad2)")
+    (add_net "Net-(P3-Pad2)")
     (add_net VCC)
   )
 
@@ -345,12 +351,14 @@
     (fp_line (start 3.048 5.08) (end -3.048 5.08) (layer F.SilkS) (width 0.381))
     (pad 1 smd rect (at -4.0005 3.27914) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 25 "Net-(C2-Pad1)"))
-    (pad 2 smd rect (at -4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask))
+    (pad 2 smd rect (at -4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
+      (net 34 "Net-(P2-Pad2)"))
     (pad 3 smd rect (at -4.0005 -3.41884) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 29 /A2))
     (pad 1 smd rect (at 4.0005 3.27914) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 25 "Net-(C2-Pad1)"))
-    (pad 2 smd rect (at 4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask))
+    (pad 2 smd rect (at 4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
+      (net 34 "Net-(P2-Pad2)"))
     (pad 3 smd rect (at 4.0005 -3.41884) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 29 /A2))
     (pad 5 thru_hole circle (at 0 2.58064) (size 1.651 1.651) (drill 1.651) (layers *.Cu *.Mask F.SilkS))
@@ -374,12 +382,14 @@
     (fp_line (start 3.048 5.08) (end -3.048 5.08) (layer F.SilkS) (width 0.381))
     (pad 1 smd rect (at -4.0005 3.27914) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 26 "Net-(C3-Pad1)"))
-    (pad 2 smd rect (at -4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask))
+    (pad 2 smd rect (at -4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
+      (net 35 "Net-(P3-Pad2)"))
     (pad 3 smd rect (at -4.0005 -3.41884) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 30 /A1))
     (pad 1 smd rect (at 4.0005 3.27914) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 26 "Net-(C3-Pad1)"))
-    (pad 2 smd rect (at 4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask))
+    (pad 2 smd rect (at 4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
+      (net 35 "Net-(P3-Pad2)"))
     (pad 3 smd rect (at 4.0005 -3.41884) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 30 /A1))
     (pad 5 thru_hole circle (at 0 2.58064) (size 1.651 1.651) (drill 1.651) (layers *.Cu *.Mask F.SilkS))
@@ -507,12 +517,14 @@
     (fp_line (start 3.048 5.08) (end -3.048 5.08) (layer F.SilkS) (width 0.381))
     (pad 1 smd rect (at -4.0005 3.27914) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 1 "Net-(C1-Pad1)"))
-    (pad 2 smd rect (at -4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask))
+    (pad 2 smd rect (at -4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
+      (net 33 "Net-(P1-Pad2)"))
     (pad 3 smd rect (at -4.0005 -3.41884) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 28 /A3))
     (pad 1 smd rect (at 4.0005 3.27914) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 1 "Net-(C1-Pad1)"))
-    (pad 2 smd rect (at 4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask))
+    (pad 2 smd rect (at 4.0005 0.07874) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
+      (net 33 "Net-(P1-Pad2)"))
     (pad 3 smd rect (at 4.0005 -3.41884) (size 1.99898 1.6002) (layers Front F.Paste F.Mask)
       (net 28 /A3))
     (pad 5 thru_hole circle (at 0 2.58064) (size 1.651 1.651) (drill 1.651) (layers *.Cu *.Mask F.SilkS))
@@ -607,7 +619,7 @@
     (fp_text reference R1 (at -1.83896 0.04572 180) (layer F.SilkS)
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
-    (fp_text value 470k (at 0.0762 -0.0254 90) (layer F.SilkS) hide
+    (fp_text value 10k (at 0.0762 -0.0254 90) (layer F.SilkS) hide
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
     (fp_line (start 0.1524 -0.5842) (end -1.3462 -0.5842) (layer F.SilkS) (width 0.1524))
@@ -634,7 +646,7 @@
     (fp_text reference R2 (at 1.83896 -0.03048 360) (layer F.SilkS)
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
-    (fp_text value 470k (at 0.0762 -0.0254 270) (layer F.SilkS) hide
+    (fp_text value 10k (at 0.0762 -0.0254 270) (layer F.SilkS) hide
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
     (fp_line (start 0.1524 -0.5842) (end -1.3462 -0.5842) (layer F.SilkS) (width 0.1524))
@@ -661,7 +673,7 @@
     (fp_text reference R3 (at 2.032 0.0254 90) (layer F.SilkS)
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
-    (fp_text value 470k (at 0.0762 -0.0254 90) (layer F.SilkS) hide
+    (fp_text value 10k (at 0.0762 -0.0254 90) (layer F.SilkS) hide
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
     (fp_line (start 0.1524 -0.5842) (end -1.3462 -0.5842) (layer F.SilkS) (width 0.1524))
@@ -688,7 +700,7 @@
     (fp_text reference R4 (at -2.02184 -0.02032 270) (layer F.SilkS)
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
-    (fp_text value 470k (at 0.0762 -0.0254 270) (layer F.SilkS) hide
+    (fp_text value 10k (at 0.0762 -0.0254 270) (layer F.SilkS) hide
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
     (fp_line (start 0.1524 -0.5842) (end -1.3462 -0.5842) (layer F.SilkS) (width 0.1524))
@@ -769,7 +781,7 @@
     (fp_text reference R7 (at 2.05232 0.03556 90) (layer F.SilkS)
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
-    (fp_text value 470k (at 0.0762 -0.0254 90) (layer F.SilkS) hide
+    (fp_text value 10k (at 0.0762 -0.0254 90) (layer F.SilkS) hide
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
     (fp_line (start 0.1524 -0.5842) (end -1.3462 -0.5842) (layer F.SilkS) (width 0.1524))
@@ -796,7 +808,7 @@
     (fp_text reference R8 (at -2.0574 0.00508 270) (layer F.SilkS)
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
-    (fp_text value 470k (at 0.0762 -0.0254 270) (layer F.SilkS) hide
+    (fp_text value 10k (at 0.0762 -0.0254 270) (layer F.SilkS) hide
       (effects (font (size 0.635 0.508) (thickness 0.127)))
     )
     (fp_line (start 0.1524 -0.5842) (end -1.3462 -0.5842) (layer F.SilkS) (width 0.1524))
