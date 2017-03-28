@@ -1,4 +1,4 @@
-update=mié 14 sep 2016 11:04:02 CEST
+update=jue 19 ene 2017 13:32:22 CET
 last_client=kicad
 [general]
 version=1
@@ -108,3 +108,4 @@ LibName47=microchip-mcp125x-xxx
 LibName48=toshiba
 LibName49=/home/daniel/development/kicad/modules/kicad-ESP8266-master/ESP8266
 LibName50=/home/daniel/development/panstamp_git/kicad/panstamp
+LibName51=buzzer
