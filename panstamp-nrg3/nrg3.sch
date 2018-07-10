@@ -37,8 +37,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "PANSTAMP NRG3 board"
-Date "2018-05-12"
-Rev "1.0"
+Date "2018-07-10"
+Rev "3.0"
 Comp "www.panstamp.com"
 Comment1 ""
 Comment2 ""
@@ -95,7 +95,7 @@ Wire Wire Line
 	8975 2825 9325 2825
 Text GLabel 8150 4850 2    60   Input ~ 0
 EXT_PROBE
-Text GLabel 8150 5200 2    60   Output ~ 0
+Text GLabel 8150 5400 2    60   Output ~ 0
 EN_SENSOR
 Text GLabel 8150 4700 2    60   Input ~ 0
 CO2_PWM
@@ -137,7 +137,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 4850 7750 4850
 Wire Wire Line
-	8150 5200 7750 5200
+	8150 5400 7750 5400
 $Comp
 L Conn_01x15 P2
 U 1 1 5AF5443E
@@ -308,7 +308,7 @@ Connection ~ 7025 3125
 Connection ~ 6950 2825
 Text GLabel 7750 5025 0    60   Input ~ 0
 D23
-Text GLabel 7750 5200 0    60   Input ~ 0
+Text GLabel 7750 5400 0    60   Input ~ 0
 D22
 Text GLabel 8150 5025 2    60   Output ~ 0
 EN_MMA
@@ -388,4 +388,10 @@ Wire Wire Line
 	4090 2650 3750 2650
 Wire Wire Line
 	2950 2650 2790 2650
+Text GLabel 8150 5200 2    60   Input ~ 0
+MMA_INT
+Text GLabel 7750 5200 0    60   Input ~ 0
+D7
+Wire Wire Line
+	8150 5200 7750 5200
 $EndSCHEMATC

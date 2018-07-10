@@ -37,8 +37,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 5
 Title "PANSTAMP NRG3 board"
-Date "2018-05-12"
-Rev "1.0"
+Date "2018-07-10"
+Rev "3.0"
 Comp "www.panstamp.com"
 Comment1 ""
 Comment2 ""
