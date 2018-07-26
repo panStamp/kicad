@@ -1350,7 +1350,7 @@ F 3 "~" H 8750 2500 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 9000 2425 2    39   ~ 0
-SAW filter bypass
+SAW filter bypass\n(assembled by default)
 Connection ~ 6750 1525
 Wire Wire Line
 	7950 1525 5550 1525
